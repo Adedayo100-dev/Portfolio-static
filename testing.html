@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <link rel="stylesheet" href="testing.css">
+</head>
+<body>
+    <div class="spiral">
+        <div class="spiral-arrow">
+            <svg viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="spiral-arrow-svg">
+                <path d="M32.844 21.9998L22.116 11.2718L24.944 8.44385L40.5 23.9998L24.944 39.5558L22.116 36.7278L32.844 25.9998H8.5V21.9998H32.844Z" fill="#121821">   
+                </path>
+            </svg>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" class="spiral-svg">
+            <defs>
+                <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle"></path>
+            </defs>
+            <text dy="70" textLength="1220">
+                <textPath xlink:href="#textcircle" class="spiral-textpath">
+            Dee - Why's Profile
+          
+          •
+          
+            Dee - Why's Profile
+          
+          •
+                </textPath>
+            </text>
+        </svg>
+    </div>
+    <style>
+        .spiral{
+            position: relative;
+            width: 185px;
+        }
+        .spiral-arrow{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .spiral-arrow-svg {
+            width: 100px;
+            max-width: 40px;
+        }
+        .spiral-svg{
+            width: 100%;
+            animation: rotate-spiral 30s linear infinite;
+        }
+        .spiral-textpath{
+            font-size: 24px;
+            /* font-family: "Grotesk"; */
+            text-transform: uppercase;
+            letter-spacing: 16px;
+            /* fill: #000; */
+        }
+        @keyframes rotate-spiral {
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+    </style>
+    <!-- <section>
+        <div>
+            <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At quam, dolorum porro aut nemo, alias eveniet ullam adipisci dolorem pariatur placeat perferendis aliquid nihil doloribus. Eaque delectus odit quis expedita.
+            </h2>
+        </div>
+        <div>
+            <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At quam, dolorum porro aut nemo, alias eveniet ullam adipisci dolorem pariatur placeat perferendis aliquid nihil doloribus. Eaque delectus odit quis expedita.
+            </h2>
+        </div>
+    </section> -->
+    <section>
+        <div class="navbar-toggler">
+            <span class="h-bar-1"></span>
+            <span class="h-bar-2"></span>
+            <span class="h-bar-3"></span>
+        </div>
+    </section>
+</body>
+</html>

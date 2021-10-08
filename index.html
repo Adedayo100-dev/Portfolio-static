@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taiwo Adedayo®</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Taiwo Adedayo Emmanuel">
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover button.css">
+    <link rel="stylesheet" href="css/toggle-button.min.css">
+    <link rel="stylesheet" href="css/navbar-toggler.css">
+    <link rel="stylesheet" href="css/light-theme.css">
+    <link rel="stylesheet" href="css/imagehover.min.css">
+    <!-- <link rel="stylesheet" href="css/audio-styles.css"> -->
+    <!-- <link rel="stylesheet" href="css/audio-pseudo-classes.css"> -->
+    
+    <!-- Twitter -->
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- Facebook -->
+    <meta property="og:title" content=""> 
+    <meta property="og:description" content=""> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:site_name" content="Taiwo Adedayo">
+    <meta property="og:image" content=""> 
+    <meta property="og:image:type" content="image/png"> 
+    <noscript></noscript>
+</head>
+<body class="home" id="body">
+    <nav class="">
+        <div class="navbar-toggler ml-auto" type="button" id="navbartoggler" onclick="toggleNav()">
+            <span class="h-bar-1"></span>
+            <span class="h-bar-2"></span>
+            <span class="h-bar-3"></span>
+        </div>
+    </nav>
+    <div class="sidenav" id="sidenav">
+        <!-- 100vh close, links, socials -->
+        <div class="sidenav-body">
+            <div>
+                <ul>
+                    <li class="nav-list">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="works.html">Works</a>
+                    </li>
+                    <li class="nav-list">
+                        <a>Blog</a>
+                    </li>
+                    <li>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="themeCheck" checked>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <div class="contact-me-title">
+                    <span>
+                        <a href="contact.html">Get in Touch</a>
+                    </span>
+                </div>
+
+                <ul class="socialsgroup">
+                    <li class="socials-list">
+                        <a href="https://github.com/Adedayo100-ux" title="Github" target="_blank" rel="noreferrer noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/></svg>
+                        </a>
+                    </li>
+                    <li class="socials-list">
+                        <a href="https://twitter.com/" title="Twitter" target="_blank" rel="noreferrer noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 21 17" role="img"><path d="M18.862 4.84c0-.19-.01-.369-.018-.557A8.445 8.445 0 0 0 21 2.1a8.609 8.609 0 0 1-2.475.638A4.188 4.188 0 0 0 20.419.41a8.522 8.522 0 0 1-2.734.988A4.39 4.39 0 0 0 14.543 0a4.236 4.236 0 0 0-4.312 4.243c0 .335.035.661.113.979C6.76 5.002 3.584 3.245 1.462.59a4.295 4.295 0 0 0-.587 2.174c0 1.51.763 2.851 1.921 3.636A4.313 4.313 0 0 1 .84 5.835v.059a4.379 4.379 0 0 0 3.463 4.282 4.34 4.34 0 0 1-1.134.146 4.405 4.405 0 0 1-.814-.09 4.324 4.324 0 0 0 4.025 3.032A8.619 8.619 0 0 1 0 15.038 12.048 12.048 0 0 0 6.606 17c7.92 0 12.256-6.514 12.256-12.16" fill="currentColor" fill-rule="evenodd"></path></svg>
+                        </a>
+                    </li>
+                    <li class="socials-list">
+                        <a href="https://www.instagram.com/" title="Instagram" target="_blank" rel="noreferrer noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 21" role="img"><g fill="currentColor" fill-rule="evenodd"><path d="M18.225 15.204c0 2.17-1.68 3.932-3.744 3.932H5.519c-2.064 0-3.744-1.762-3.744-3.932v-9.41c0-2.168 1.68-3.93 3.744-3.93h8.962c2.064 0 3.744 1.762 3.744 3.93v9.41zM14.481 0H5.519C2.475 0 0 2.599 0 5.794v9.41C0 18.401 2.475 21 5.52 21h8.96c3.045 0 5.52-2.599 5.52-5.796v-9.41C20 2.599 17.525 0 14.48 0z"></path><path d="M10 14.931a3.936 3.936 0 0 1-3.933-3.932A3.938 3.938 0 0 1 10 7.064a3.937 3.937 0 0 1 3.933 3.935A3.936 3.936 0 0 1 10 14.93M10 5c-3.308 0-6 2.69-6 5.999A6.008 6.008 0 0 0 10 17c3.308 0 6-2.694 6-6.001A6.006 6.006 0 0 0 10 5M14.501 3c-.394 0-.783.158-1.06.438-.278.28-.441.666-.441 1.06 0 .395.163.782.44 1.062.278.277.667.44 1.061.44.395 0 .781-.163 1.059-.44.28-.28.44-.667.44-1.061A1.498 1.498 0 0 0 14.501 3"></path></g></svg>
+                        </a>
+                    </li>
+                    <li class="socials-list">
+                        <a href="https://wa.me/2348026244041" title="Whatsapp" target="_blank" rel="noreferrer noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 17 16" role="img"><path d="M.215 16h3.643V5.204H.215V16zM2.06 0C.814 0 0 .806 0 1.865 0 2.903.792 3.73 2.013 3.73h.025c1.27 0 2.06-.827 2.06-1.865C4.075.805 3.308 0 2.06 0zM17 9.808V16h-3.645v-5.777c0-1.45-.526-2.44-1.847-2.44-1.007 0-1.603.667-1.87 1.313-.095.23-.12.553-.12.874V16H5.875s.05-9.782 0-10.796h3.645v1.53c-.007.012-.018.023-.025.036h.025v-.037c.485-.734 1.348-1.782 3.284-1.782C15.2 4.951 17 6.493 17 9.808z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                        </a>
+                    </li>
+                    <li class="socials-list">
+                        <a href="https://www.facebook.com/" title="Facebook" target="_blank" rel="noreferrer noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 11 23" role="img"><path d="M6.271 23V11.488h3.892l.619-3.818h-4.51V5.756c0-1 .334-1.947 1.796-1.947H11V0H6.843C3.348 0 2.396 2.251 2.396 5.36v2.31H0v3.818h2.396V23H6.27z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="text-align-center">
+                    <small style="color: rgb(170, 170, 170, .75);">Made with love in Nigeria, by <a href="https://www.instagram.com/">_taiwo_adedayo_</a></small>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <main>
+        <section class="first-section">
+            <div class="first-section-content">
+                <div class="jumbotron">
+                    <h1 class="heading-type-1">Dee - Why</h1>
+                    <p class="desc" lang="en">I'm a front-end web developer. I design vogue websites with aesthetic designs that turn visitors into engaged clients. Let build your brand together...</p>
+                    <div class="cta-box">
+                        <button class="btn-cv border-color">
+                            <a href="" download>DOWNLOAD RESUME</a>
+                            <span class="btn-inline-arrow" tabindex="0" role="button" aria-label="Next slide">
+                                <svg class="icon icon-arrow-right" id="icon-arrow-right" viewBox="0 0 32 32">
+                                    <path d="M30.2 16c0-0.2 0-0.4 0-0.4 0-0.2-0.2-0.2-0.2-0.4l-7.2-7.2c-0.6-0.6-1.2-0.6-1.6 0s-0.6 1.2 0 1.6l5 5.2h-23.2c-0.4 0-0.8 0.2-1 0.4s-0.2 0.4-0.2 0.8c0 0.4 0.2 0.6 0.4 0.8s0.6 0.4 0.8 0.4h23.2l-5 5.2c-0.6 0.6-0.6 1.2 0 1.6 0.6 0.6 1.2 0.6 1.6 0l7.2-7.2c0.2 0 0.2-0.2 0.2-0.4 0 0 0-0.2 0-0.4z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="btn-works bounce-to-right border-color">
+                            <a href="#" lang="en">VIEW MY WORKS</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="arrow-container">
+                    <span class="arrow prev-arrow btn-animate" tabindex="0" role="button" aria-label="Previous slide">
+                        <svg class="icon icon-arrow-left" id="icon-arrow-left" viewBox="0 0 32 32">
+                            <path d="M1.8 16c0 0.2 0 0.2 0 0.4s0.2 0.4 0.2 0.4l7.2 7.2c0.6 0.6 1.2 0.6 1.6 0s0.6-1.2 0-1.6l-5-5.2h23.2c0.4 0 0.6-0.2 0.8-0.4s0.4-0.6 0.4-0.8c0-0.4-0.2-0.6-0.4-0.8s-0.6-0.4-0.8-0.4h-23.2l5-5.2c0.6-0.6 0.6-1.2 0-1.6-0.4-0.6-1-0.6-1.6 0l-7.2 7.2c0 0-0.2 0.2-0.2 0.4 0 0 0 0.2 0 0.4z"></path>
+                        </svg>
+                    </span>
+                    <span class="arrow next-arrow btn-animate" tabindex="0" role="button" aria-label="Next slide">
+                        <svg class="icon icon-arrow-right" id="icon-arrow-right" viewBox="0 0 32 32">
+                            <path d="M30.2 16c0-0.2 0-0.4 0-0.4 0-0.2-0.2-0.2-0.2-0.4l-7.2-7.2c-0.6-0.6-1.2-0.6-1.6 0s-0.6 1.2 0 1.6l5 5.2h-23.2c-0.4 0-0.8 0.2-1 0.4s-0.2 0.4-0.2 0.8c0 0.4 0.2 0.6 0.4 0.8s0.6 0.4 0.8 0.4h23.2l-5 5.2c-0.6 0.6-0.6 1.2 0 1.6 0.6 0.6 1.2 0.6 1.6 0l7.2-7.2c0.2 0 0.2-0.2 0.2-0.4 0 0 0-0.2 0-0.4z"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-section">
+            <div class="second-section-content">
+                <div>
+                    <figure class="imghvr-zoom-out-right"> <img src="images/me.jpg"> <figcaption> Adedayo Taiwo </figcaption> <a href="#"></a> </figure>
+                    <!-- <img src="images/me.jpg" alt="" width="100%"> -->
+
+                </div>
+                <div>
+                    <div class="subtitle-right lg-mt-0">
+                        <h3 class="first-h3">What I Do</h3>
+                    </div>
+                    <p>I'm a Nigeria based web developer focused on crafting bespoke, fast & responsive websites with user friendly experiences that accurately reflects you and your brand.</p>
+                    <p>I help businesses do better online with scalable, optimised, maintainable, accessible websites. Esse molestias optio, laboriosam deleniti, saepe quisquam veritatis culpa nisi minus excepturi dolore aliquid? Commodi aliquid at facere quod saepe cumque culpa.</p>
+                    <div class="subtitle-right">
+                        <span class="read-more"><a href="about.html#about-content">Read More <span>&rarr;</span></a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="third-section">
+            <div class="third-section-content">
+                <div>
+                    <h3>What I've Been Up To</h3>
+                </div>
+                <div class="works-list">
+                    <ul class="">
+                        <li>
+                            <img src="images/images (5).jpeg" alt="">
+                            <div class="border-color">
+                                <h6>Minimalist Web-Designs</h6>
+                                <p>A collection of some minimalist website projects I've made. Consecteur goto inter millian der hat tunnel app</p>
+                                <button class="">Check Out</button>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/images (5).jpeg" alt="">
+                            <div class="border-color">
+                                <h6>Javascript Projects</h6>
+                                <p>My collection of javascript applications</p>
+                                <button class="">Check Out</button>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/images - 2021-07-17T043609.996.jpeg" alt="">
+                            <div class="border-color">
+                                <h6>Portfolio Design</h6>
+                                <p>Lorem ipsum dolor sit amet consecteur goto inter millian der hat tunnel app</p>
+                                <button class="">Check Out</button>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/images - 2021-07-17T043609.996.jpeg" alt="">
+                            <div class="border-color">
+                                <h6>E-commerce Websites</h6>
+                                <p>Lorem ipsum dolor sit amet consecteur goto inter millian der hat tunnel app</p>
+                                <button class="">Check Out</button>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/images - 2021-07-17T043103.934.jpeg" alt="">
+                            <div class="border-color">
+                                <h6>Website Clones</h6>
+                                <p>Lorem ipsum dolor sit amet consecteur goto inter millian der hat tunnel app</p>
+                                <button class="">Check Out</button>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <img src="" alt="">
+                            <div class="border-color">
+                                <h6>WordPress Sites</h6>
+                                <p>Lorem ipsum dolor sit amet consecteur goto inter millian der hat tunnel app</p>
+                                <button class="">Check Out</button>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div>
+                    <div class="works-list-arrows">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                            <g fill="none" fill-rule="evenodd">
+                                <rect width="30" height="30"></rect>
+                                <polyline stroke="#FFF" class="wg-arow-left" stroke-linecap="round" stroke-linejoin="round" points="30 7.5 22.5 15 30 22.5"></polyline>
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                            <g fill="none" fill-rule="evenodd">
+                                <rect width="30" height="30"></rect>
+                                <polyline stroke="#FFF" class="wg-arow-right" stroke-linecap="round" stroke-linejoin="round" points="22.5 7.5 30 15 22.5 22.5"></polyline>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="fourth-section">
+            <div class="fourth-section-content">
+                <!-- This is Me !-->
+                <div class="subtitle-right">
+                    <h3>This Is Me</h3>
+                </div>
+                <div></div>
+                <!-- <figure class="imghvr-zoom-out-right"> <img src="images/me.jpg" usemap="#me"> <map name="me">
+                        <area shape="rect" coords="0,0,0,0" alt="Taiwo Adedayo">
+                    </map> <figcaption> Adedayo Taiwo </figcaption> <a href="#"></a> 
+                </figure> -->
+            </div>
+        </section>
+
+        <section class="fifth-section">
+            <div class="fifth-section-content">
+                <!-- Testimonies -->
+                <div>
+                    <h3>What People Say</h3>
+                </div>
+                <div class="testimonials">
+                    <ul class="scroller">
+                        <li class="testimonial-card">
+                            <img src="images/me.jpg" class="avatar" alt="Elise" width="50px">
+                            <div class="testimonial-content">
+                                <p>
+                                    Dee - Why is a trust-worthy business partner. Working with him is nostrud imperdiet abhorreant qui, hinc incorrupte vix ad. Vel id aliquip oblique. Primis feugait sit an, brute illud convenire duo ea. Graece tempor eripuit sed in.
+                                </p>
+                                <span>Elise</span>
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <img src="images/me.jpg" class="avatar" alt="Elise" width="50px">
+                            <div class="testimonial-content">
+                                <p>
+                                    Vitae pericula maluisset ut mei, pro eleifend gubergren eu. Et his brute graeci. Affert ponderum ei vel, dolorum accumsan ea has. Sea oblique salutatus ei, simul lucilius pri et. Errem melius temporibus ut eos
+                                </p>
+                                <span>John</span>
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <img src="images/me.jpg" class="avatar" alt="Elise" width="50px">
+                            <div class="testimonial-content">
+                                <p>
+                                    Ne est virtute indoctum, quaeque vituperata cum ut. Te nisl quaeque pri. Vix ex autem latine, mel ne nobis scaevola, ei est dolor utinam commune. Pri unum doctus in, cu primis pertinax eos.
+                                </p>
+                                <span>Imani</span>
+                            </div>
+                        </li>
+                        <li class="testimonial-card">
+                            <img src="images/me.jpg" class="avatar" alt="Elise" width="50px">
+                            <div class="testimonial-content">
+                                <p>
+                                    Ne est virtute indoctum, quaeque vituperata cum ut. Te nisl quaeque pri. Vix ex autem latine, mel ne nobis scaevola, ei est dolor utinam commune. Pri unum doctus in, cu primis pertinax eos.
+                                </p>
+                                <span>Peter</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="test-arrows">
+                    <span class="test-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                            <g fill="none" fill-rule="evenodd">
+                                <rect width="30" height="30"></rect>
+                                <polyline stroke="#FFF" class="wg-arow-left" stroke-linecap="round" stroke-linejoin="round" points="30 7.5 22.5 15 30 22.5"></polyline>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="test-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                            <g fill="none" fill-rule="evenodd">
+                                <rect width="30" height="30"></rect>
+                                <polyline stroke="#FFF" class="wg-arow-right" stroke-linecap="round" stroke-linejoin="round" points="22.5 7.5 30 15 22.5 22.5"></polyline>
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="first-bond">
+            <div class="name-scroll">
+                <div>
+                    Taiwo <span>Adedayo </span>Taiwo <span>
+                    Adedayo </span>Taiwo <span>Adedayo </span>
+                    Taiwo <span>Adedayo </span>
+                </div>
+                <div>
+                    Taiwo <span>Adedayo </span>Taiwo <span>
+                    Adedayo </span>Taiwo <span>Adedayo </span>
+                    Taiwo <span>Adedayo </span>
+                </div>
+            </div>
+            
+        </div>
+                
+        <div class="accordion">
+            <details>
+                <summary>
+                    <h5>What I can do for you</h5>
+
+                    <div class="accordion-flush">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                            <g fill="none" fill-rule="evenodd">
+                                <rect width="30" height="30"></rect>
+                                <polyline stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="7.5 11.25 15 18.75 22.5 11.25"></polyline>
+                            </g>
+                        </svg>
+                    </div>
+                </summary>
+                <div class="acc">
+                    <p>lorem</p>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    <h5>How long will it take to revamp our website?</h5>
+                    <div class="accordion-flush">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                            <g fill="none" fill-rule="evenodd">
+                                <rect width="30" height="30"></rect>
+                                <polyline stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="7.5 11.25 15 18.75 22.5 11.25"></polyline>
+                            </g>
+                        </svg>
+                    </div>
+                </summary>
+                <div class="acc">
+                    <ul>
+                        <li>
+                            <a>Design my Portfolio</a>
+                        </li>
+                        <li>
+                            <a>I need a business website</a>
+                        </li>
+                        <li>
+                            <a>Let collaborate</a>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    <h5>Do you have any suggestions?</h5>
+                    <div class="accordion-flush">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                            <g fill="none" fill-rule="evenodd">
+                                <rect width="30" height="30"></rect>
+                                <polyline stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="7.5 11.25 15 18.75 22.5 11.25"></polyline>
+                            </g>
+                        </svg>
+                    </div>
+                </summary>
+                <div class="acc">
+                    <form class="textarea-container">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Let me know what you feel."></textarea>
+                        <input type="submit" class="accordion-submit textarea-submit" value="Submit">
+                    </form>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    <h5>FAQs</h5>
+                    <div class="accordion-flush">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                            <g fill="none" fill-rule="evenodd">
+                                <rect width="30" height="30"></rect>
+                                <polyline stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="7.5 11.25 15 18.75 22.5 11.25"></polyline>
+                            </g>
+                        </svg>
+                    </div>
+                </summary>
+                <div class="acc">
+                    <ul>
+                        <li>
+                            <a href="">What's your website pricing?</a>
+                        </li>
+                        <li>
+                            <a href="">How many years of experience do you have?</a>
+                        </li>
+                        <li>
+                            <a href="">Where are you based?</a>
+                        </li>
+                        <li>
+                            <form class="input-container d-flex">
+                                <input type="text" name="" id="" placeholder="Ask...">
+                                <input type="submit" class="accordion-submit input-submit" value="Submit">
+                            </form>
+                        </li>
+                    </ul>
+                </div>       
+            </details>  
+        </div>  
+       
+        <div class="location-container">
+            <div>
+                <img src="images/location-2.svg" height="17px" class="location-icon m-auto">   <span>Nigeria</span>
+            </div>
+        </div>
+
+        <footer>
+            <span>&copy; 2021. All Rights Reserved.</span>
+        </footer>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

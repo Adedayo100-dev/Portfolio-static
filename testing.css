@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+section div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e2330;
+}
+section div:nth-child(2){
+    background-color: #e91e63;
+    clip-path: circle(200px at center);
+}
+section div h2{
+    position: absolute;
+    left: 0;
+    font-size: 10em;
+    color: #FFF;
+    white-space: nowrap;
+    line-height: 100vh;
+    cursor: default;
+    animation: animate 60s linear infinite;
+}
+section div:nth-child(2) h2{
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #FFF;
+    color: transparent;
+}
+@keyframes animate{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+} */
+/* section{
+    background-color: white;
+    display: block;
+    height: fit-content;
+} */
+body{
+    height: 100vh;
+}
+.navbar-toggler{
+    /* border: 0.5px solid black; */
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+div:hover .h-bar-1, div:focus .h-bar-1, div:visited .h-bar-1{
+    animation: bar-1 1s ease 0s forwards;
+}
+@keyframes bar-1{
+    0%{
+        /* background-color: red; */
+        top: 7px;
+        left: 0px;
+    }
+    25%{
+        /* background-color: blue; */
+    }
+    50%{
+        /* background-color: green; */
+        top: 15px;
+        left: 4px;
+        transform: rotate(0deg);
+    }
+    /* 75%{
+        background-color: yellow;
+    } */
+    100%{
+        /* background-color: yellow; */
+        top: 15px;
+        left: 4px;
+        transform: rotate(45deg);
+    }
+}
+div:hover .h-bar-2, div:focus .h-bar-2, div:target .h-bar-2{
+    animation: bar-2 1s ease-in 0s forwards;
+}
+@keyframes bar-2{
+    0%{
+        /* background-color: red; */
+        left: 4px;
+        visibility: visible;
+    }
+    25%{
+        /* background-color: blue; */
+    }
+    50%{
+        /* background-color: green; */
+        
+    }
+    75%{
+        /* background-color: yellow; */
+        visibility: hidden;
+    }
+    100%{
+        /* background-color: yellow; */
+        left: 50px;
+        visibility: hidden;
+    }
+}
+div:hover .h-bar-3, div:focus .h-bar-3, div:target .h-bar-3{
+    animation: bar-3 1s ease 0s forwards;
+}
+@keyframes bar-3{
+    0%{
+        /* background-color: red; */
+        width: 10px;
+        top: 23px;
+        left: 0px;
+    }
+    25%{
+        /* background-color: blue; */
+    }
+    50%{
+        /* background-color: green; */
+        width: 22px;
+        top: 15px;
+        left: 4px;
+        transform: rotate(0deg);
+    }
+    /* 75%{
+        background-color: yellow;
+    } */
+    100%{
+        /* background-color: yellow; */
+        width: 22px;
+        top: 15px;
+        left: 4px;
+        transform: rotate(-45deg);
+        
+    }
+}
+span{
+    display: block;
+}
+.h-bar-1{
+    width: 22px;
+    height: 2px;
+    position: absolute;
+    top: 7px;
+    left: 1px;
+    background-color: #000;
+    /* border: 1px solid burlywood; */
+    border-radius: 1px;
+    
+}
+.h-bar-2{
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 15px;
+    left: 4px;
+    background-color: #000;
+    /* border: 1px solid burlywood; */
+    border-radius: 1px;
+    
+}
+.h-bar-3{
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    top: 23px;
+    left: 1px;
+    background-color: #000;
+    /* border: 1px solid burlywood; */
+    border-radius: 1px;
+    
+}
