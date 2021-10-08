@@ -1,0 +1,30 @@
+audio::-webkit-media-controls-panel{
+    background-color: green;
+}
+audio::-webkit-media-controls input[pseudo="-webkit-media-controls-play-button" i]::-internal-media-controls-button-hover-background{
+    background-color: red !important;
+}
+div::-webkit-internal-media-controls-button-hover-background{
+    background-color: red;
+}
+audio::-webkit-media-controls-timeline{
+    background-color: blue;
+}
+audio::-webkit-media-controls-timeline::-internal-media-controls-segmented-track{
+    background-color: red;
+}
+audio::-webkit-media-controls-volume-control-container{
+    background-color: pink;
+}
+input[pseudo="-webkit-media-controls-volume-slider" i]::-internal-media-controls-segmented-track{
+    background-color: violet;
+}
+input[pseudo="-webkit-media-controls-volume-slider" i]::-webkit-slider-thumb{
+    background-color: brown;
+}
+audio>div#thumb{
+    background-color: brown;
+}
+audio::-webkit-media-controls-play-button {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSJXaW5kb3dUZXh0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik04IDV2MTRsMTEtN3oiLz4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KPC9zdmc+");
+}

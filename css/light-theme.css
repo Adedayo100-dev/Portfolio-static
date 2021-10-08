@@ -1,0 +1,81 @@
+body.light-theme{
+    background-color: #FFF !important;
+    color: var(--dark-color) !important;
+    /* background-image: linear-gradient(to left, white 50%, rgb(237 237 237) 50%); */
+}
+.light-theme div.sidenav{
+    background-color: rgba( 237, 237, 237, 0.5);
+}
+.light-theme .nav-list a {
+    color: var(--dark-color);
+}
+.light-theme .contact-me-title::before, .light-theme .contact-me-title::after {
+    background-color: rgb(0 0 0 / 20%);
+}
+.light-theme .contact-me-title span a{
+    color: var(--dark-color);
+}
+.light-theme .socials-list {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+.light-theme .socials-list a {
+    color: var(--dark-color);
+}
+.light-theme .border-color{
+    border-color: rgba(0 0 0 / 20%) !important;
+}
+.light-theme .navbar-toggler span{
+    background-color: var(--dark-color);
+}
+.light-theme .btn-animate::before{
+    background-color: var(--dark-color);
+}
+.light-theme .btn-animate:hover a, .btn-animate:hover svg {
+    color: #FFF !important;
+}
+.light-theme .btn-cv a{
+    color: var(--dark-color);
+}
+.light-theme .btn-works {
+    background-color: var(--dark-color) !important;
+}
+.light-theme .btn-works a {
+    color: #FFF;
+}
+.light-theme .btn-animate:hover a, .btn-animate:hover svg {
+    color: #FFF;
+}
+.light-theme .btn-works:hover a {
+    color: var(--dark-color);
+}
+.light-theme .bounce-to-right:before{
+    background-color: #FFF;
+}
+.light-theme .arrow{
+    border: 0.5px solid rgb(0 0 0 / 20%);
+}
+.light-theme .icon{
+    color: var(--dark-color) !important;
+}
+.light-theme .works-categories li a {
+    color: var(--dark-color);
+}
+.light-theme .read-more a, .light-theme .read-more a:hover, .light-theme .read-more a:active, .light-theme .read-more a:visited {
+    color: var(--dark-color);
+}
+.light-theme .works-list ul li div button {
+    color: #FFF;
+    background-color: var(--dark-color);
+}
+.light-theme .wg-arow-left{
+    stroke: var(--dark-color);
+}
+.light-theme .wg-arow-right{
+    stroke: var(--dark-color);
+}
+.light-theme .accordion-items, .light-theme .acc input, .light-theme .acc textarea,  .light-theme details, .light-theme .accordion-flush:hover{
+    border-color: rgba(0 0 0 / 20%) ! important;
+}
+.light-theme .accordion-flush polyline{
+    stroke: var(--dark-color) !important;
+}
