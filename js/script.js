@@ -42,7 +42,9 @@ document.getElementById("themeCheck").addEventListener("change", function() {
 
 const testimonials = document.querySelector('.testimonials');
 const scroller = testimonials.querySelector('.scroller');
-const testArrow = document.querySelector('.test-arrows');
+const testimonialCard = testimonials.getElementsByClassName('testimonial-card');
+const lengthTestimonialCard = testimonialCard.length;
+const testArrow = document.querySelector('.test-arrows-2');
 const nextBtn = testArrow.querySelector('.test-next');
 const prevBtn = testArrow.querySelector('.test-prev');
 const itemWidth = testimonials.querySelector('.testimonial-card').offsetWidth;
@@ -66,3 +68,4 @@ function scrollToPrevItem() {
         // This is the first item. Go to last item by setting scroll position to scroller width
         scroller.scrollTo({left: scroller.scrollWidth, top: 0, behavior:'smooth'});
 }
+document.querySelector('.test-counter').innerHTML = "1" + "/"  + lengthTestimonialCard;
