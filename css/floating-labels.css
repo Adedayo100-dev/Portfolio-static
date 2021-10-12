@@ -1,16 +1,12 @@
 /* These Stylesheet was written by Bootstrap and edited by the Author(Taiwo Adedayo) of this Website */
-.form-message {
-  /* width: 100%; */
-  /* max-width: 420px; */
-}
 
-.form-label-group {
+.form-label-group, select {
   position: relative;
   margin-bottom: 1rem;
 }
 
 .form-label-group input, 
-.form-label-group label {
+.form-label-group label, .contact select {
   height: 3.125rem;
   padding: .75rem;
 }
@@ -28,7 +24,7 @@
   width: 100%;
   margin-bottom: 0; /* Override default `<label>` margin */
   line-height: 1.5;
-  color: #495057;
+  color: rgba(128, 128, 128, 0.2);
   pointer-events: none;
   cursor: text; /* Match the input under the label */
   border: 1px solid transparent;
