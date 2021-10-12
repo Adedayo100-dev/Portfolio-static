@@ -28,7 +28,7 @@ html{
     margin-right: 20px;
 }
 .works-categories li a{
-    color: #FFF;
+    color: rgb(128, 128, 128);
 }
 
 @media only screen and (max-width: 991.98px){
