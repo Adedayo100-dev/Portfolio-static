@@ -122,8 +122,13 @@
                                 </svg>
                             </span>
                         </button>
-                        <button class="btn-works bounce-to-right border-color">
+                        <button class="btn-works border-color">
                             <a href="#" lang="en">VIEW MY WORKS</a>
+                            <span class="btn-inline-arrow" tabindex="0" role="button" aria-label="Next slide">
+                                <svg class="icon icon-arrow-right" id="icon-arrow-right" viewBox="0 0 32 32">
+                                    <path d="M30.2 16c0-0.2 0-0.4 0-0.4 0-0.2-0.2-0.2-0.2-0.4l-7.2-7.2c-0.6-0.6-1.2-0.6-1.6 0s-0.6 1.2 0 1.6l5 5.2h-23.2c-0.4 0-0.8 0.2-1 0.4s-0.2 0.4-0.2 0.8c0 0.4 0.2 0.6 0.4 0.8s0.6 0.4 0.8 0.4h23.2l-5 5.2c-0.6 0.6-0.6 1.2 0 1.6 0.6 0.6 1.2 0.6 1.6 0l7.2-7.2c0.2 0 0.2-0.2 0.2-0.4 0 0 0-0.2 0-0.4z"></path>
+                                </svg>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -153,8 +158,10 @@
                     <div class="subtitle-right lg-mt-0">
                         <h3 class="first-h3">What I Do</h3>
                     </div>
-                    <p>I'm a Nigeria based web developer focused on crafting bespoke, fast & responsive websites with user friendly experiences that accurately reflects you and your brand.</p>
-                    <p>I help businesses do better online with scalable, optimised, maintainable, accessible websites. Esse molestias optio, laboriosam deleniti, saepe quisquam veritatis culpa nisi minus excepturi dolore aliquid? Commodi aliquid at facere quod saepe cumque culpa.</p>
+                    <div class="wid-content">
+                        <p>I'm a Nigeria based web developer focused on crafting bespoke, fast & responsive websites with user friendly experiences that accurately reflects you and your brand.</p>
+                        <p>I help businesses do better online with scalable, optimised, maintainable, accessible websites. Esse molestias optio, laboriosam deleniti, saepe quisquam veritatis culpa nisi minus excepturi dolore aliquid? Commodi aliquid at facere quod saepe cumque culpa.</p>
+                    </div>
                     <div class="subtitle-right">
                         <span class="read-more"><a href="about.html#about-content">Read More <span>&rarr;</span></a></span>
                     </div>
@@ -165,12 +172,13 @@
         <section class="third-section">
             <div class="third-section-content">
                 <div>
-                    <h3>What I've Been Up To</h3>
+                    <h3>My Work</h3>
                 </div>
                 <div class="works-list">
                     <ul class="">
                         <li>
                             <img src="images/images (5).jpeg" alt="">
+                            <!-- <img src="images/images (5i).jpeg" alt=""> -->
                             <div class="border-color">
                                 <h6>Minimalist Web-Designs</h6>
                                 <p>A collection of some minimalist website projects I've made. Consecteur goto inter millian der hat tunnel app</p>
@@ -245,11 +253,64 @@
                 <div class="subtitle-right">
                     <h3>This Is Me</h3>
                 </div>
-                <div></div>
-                <!-- <figure class="imghvr-zoom-out-right"> <img src="images/me.jpg" usemap="#me"> <map name="me">
-                        <area shape="rect" coords="0,0,0,0" alt="Taiwo Adedayo">
-                    </map> <figcaption> Adedayo Taiwo </figcaption> <a href="#"></a> 
-                </figure> -->
+                <div class="spiral">
+                    <div class="spiral-arrow">
+                        <svg viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="spiral-arrow-svg">
+                            <path d="M32.844 21.9998L22.116 11.2718L24.944 8.44385L40.5 23.9998L24.944 39.5558L22.116 36.7278L32.844 25.9998H8.5V21.9998H32.844Z" fill="none"></path>
+                        </svg>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" class="spiral-svg">
+                        <defs>
+                            <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle"></path>
+                        </defs>
+                        <text dy="-10" textLength="1220">
+                            <textPath xlink:href="#textcircle" class="spiral-textpath">
+                        Dee - Why's Profile
+                      
+                      •
+                      
+                        Dee - Why's Profile
+                      
+                      •
+                            </textPath>
+                        </text>
+                    </svg>
+                </div>
+                <style>
+                    .spiral{
+                        position: relative;
+                        width: 207px;
+                    }
+                    .spiral-arrow{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                    .spiral-arrow-svg {
+                        width: 100px;
+                        max-width: 40px;
+                    }
+                    .spiral-arrow-svg path{
+                        fill: #FFF;
+                    }
+                    .spiral-svg{
+                        width: 100%;
+                        animation: rotate-spiral 30s linear infinite;
+                    }
+                    .spiral-textpath{
+                        font-size: 50px;
+                        /* font-family: "Grotesk"; */
+                        text-transform: uppercase;
+                        letter-spacing: 5px;
+                        fill: rgba(128, 128, 128, 0.5);
+                    }
+                    @keyframes rotate-spiral {
+                        100% {
+                            transform: rotate(1turn);
+                        }
+                    }
+                </style>
             </div>
         </section>
 
@@ -257,7 +318,7 @@
             <div class="fifth-section-content">
                 <!-- Testimonies -->
                 <div>
-                    <h3>What People Say</h3>
+                    <h3>What My Clients Are Saying</h3>
                 </div>
                 <div class="testimonials">
                     <ul class="scroller">
@@ -267,7 +328,7 @@
                                 <p>
                                     Dee - Why is a trust-worthy business partner. Working with him is nostrud imperdiet abhorreant qui, hinc incorrupte vix ad. Vel id aliquip oblique. Primis feugait sit an, brute illud convenire duo ea. Graece tempor eripuit sed in.
                                 </p>
-                                <span>Elise</span>
+                                <span>@_elise</span>
                             </div>
                         </li>
                         <li class="testimonial-card">
@@ -276,47 +337,51 @@
                                 <p>
                                     Vitae pericula maluisset ut mei, pro eleifend gubergren eu. Et his brute graeci. Affert ponderum ei vel, dolorum accumsan ea has. Sea oblique salutatus ei, simul lucilius pri et. Errem melius temporibus ut eos
                                 </p>
-                                <span>John</span>
+                                <span>@_john</span>
                             </div>
                         </li>
                         <li class="testimonial-card">
                             <img src="images/me.jpg" class="avatar" alt="Elise" width="50px">
                             <div class="testimonial-content">
                                 <p>
-                                    Ne est virtute indoctum, quaeque vituperata cum ut. Te nisl quaeque pri. Vix ex autem latine, mel ne nobis scaevola, ei est dolor utinam commune. Pri unum doctus in, cu primis pertinax eos.
+                                    Ne est virtute indoctum, quaeque vituperata cam ut. Te nisl quaeque pri. Vix ex autem latine, mel ne nobis scaevola, ei est dolor utinam commune. Pri unum doctus in, cu primis pertinax eos.
                                 </p>
-                                <span>Imani</span>
+                                <span>@imani_</span>
                             </div>
                         </li>
                         <li class="testimonial-card">
                             <img src="images/me.jpg" class="avatar" alt="Elise" width="50px">
                             <div class="testimonial-content">
                                 <p>
-                                    Ne est virtute indoctum, quaeque vituperata cum ut. Te nisl quaeque pri. Vix ex autem latine, mel ne nobis scaevola, ei est dolor utinam commune. Pri unum doctus in, cu primis pertinax eos.
+                                    Ne est virtute indoctum, quaeque vituperata cam ut. Te nisl quaeque pri. Vix ex autem latine, mel ne nobis scaevola, ei est dolor utinam commune. Pri unum doctus in, cu primis pertinax eos.
                                 </p>
-                                <span>Peter</span>
+                                <span>@_pet_er_</span>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div class="test-arrows">
-                    <span class="test-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                            <g fill="none" fill-rule="evenodd">
-                                <rect width="30" height="30"></rect>
-                                <polyline stroke="#FFF" class="wg-arow-left" stroke-linecap="round" stroke-linejoin="round" points="30 7.5 22.5 15 30 22.5"></polyline>
-                            </g>
-                        </svg>
-                    </span>
-                    <span class="test-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                            <g fill="none" fill-rule="evenodd">
-                                <rect width="30" height="30"></rect>
-                                <polyline stroke="#FFF" class="wg-arow-right" stroke-linecap="round" stroke-linejoin="round" points="22.5 7.5 30 15 22.5 22.5"></polyline>
-                            </g>
-                        </svg>
-                    </span>
+                <div class="test-arrows-2">
+                    <span class="test-counter">1/4</span>
+                    <div class="">
+                        <span class="test-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                <g fill="none" fill-rule="evenodd">
+                                    <rect width="30" height="30"></rect>
+                                    <polyline stroke="#FFF" class="wg-arow-left" stroke-linecap="round" stroke-linejoin="round" points="30 7.5 22.5 15 30 22.5"></polyline>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="test-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                <g fill="none" fill-rule="evenodd">
+                                    <rect width="30" height="30"></rect>
+                                    <polyline stroke="#FFF" class="wg-arow-right" stroke-linecap="round" stroke-linejoin="round" points="22.5 7.5 30 15 22.5 22.5"></polyline>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
                 </div>
+                
             </div>
         </section>
 
@@ -352,7 +417,21 @@
                     </div>
                 </summary>
                 <div class="acc">
-                    <p>lorem</p>
+                    <!-- <p>These are some of what I can help you with:</p> -->
+                    <ul>
+                        <li>
+                            <a>Design my Portfolio</a>
+                        </li>
+                        <li>
+                            <a>I need a business website</a>
+                        </li>
+                        <li>
+                            <a>Revamp your website</a>
+                        </li>
+                        <li>
+                            <a>Let collaborate</a>
+                        </li>
+                    </ul>
                 </div>
             </details>
             <details>
@@ -396,7 +475,7 @@
                 <div class="acc">
                     <form class="textarea-container">
                         <textarea name="" id="" cols="30" rows="10" placeholder="Let me know what you feel."></textarea>
-                        <input type="submit" class="accordion-submit textarea-submit" value="Submit">
+                        <input type="submit" class="accordion-submit textarea-submit" value="Let Me Know">
                     </form>
                 </div>
             </details>
@@ -415,13 +494,16 @@
                 <div class="acc">
                     <ul>
                         <li>
-                            <a href="">What's your website pricing?</a>
+                            <a href="pricing.html">What's your website pricing?</a>
                         </li>
                         <li>
                             <a href="">How many years of experience do you have?</a>
                         </li>
                         <li>
                             <a href="">Where are you based?</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">How do I contact you?</a>
                         </li>
                         <li>
                             <form class="input-container d-flex">

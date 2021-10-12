@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact - Taiwo Adedayo</title>
+    <title>Pricing - Taiwo Adedayo</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -16,10 +15,9 @@
     <link rel="stylesheet" href="css/navbar-toggler.css">
     <link rel="stylesheet" href="css/light-theme.css">
     <link rel="stylesheet" href="css/imagehover.min.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/floating-labels.css">
+    <link rel="stylesheet" href="css/pricing.css">
 </head>
-<body class=" contact" id="body">
+<body class=" pricing" id="body">
     <!-- Contact -->
     <nav class="">
         <div class="navbar-toggler ml-auto" type="button" id="navbartoggler" onclick="toggleNav()">
@@ -40,7 +38,7 @@
                         <a href="about.html">About</a>
                     </li>
                     <li class="nav-list">
-                        <a href="works.html">Works</a>
+                        <a href="#">Works</a>
                     </li>
                     <li class="nav-list">
                         <a>Blog</a>
@@ -94,49 +92,55 @@
     </div>
     <main>
         <section class="wks-section-1">
-            <h1 class="heading-type-2">Get in Touch</h1>           
+            <h1 class="heading-type-2">Pricing</h1>           
         </section>
-        <div class="wks-section-2 contact-content">
-            <div class="w-100">
-                <span class="contact-welcome">You have a new project <wbr> or want to say hello?</span>
-                <form action="" class="">
-                    <div class="form-label-group">
-                        <input type="text" name="fullname" id="inputName" placeholder="Your Name (Personal / Business)*" style="text-transform: capitalize;" required autofocus>
-                        <label for="inputName">Your Name (Personal / Business)*</label>
-                    </div>
-                    <div class="form-label-group">
-                        <input type="email" name="mail" id="inputMail" placeholder="Your Email*" required>
-                        <label for="inputMail">Your Email*</label>
-                    </div>
-                    <select id="services" name="services" placeholder="Type of Service*" required>
-                        <option value="Business">Product & Services (Business)</option>
-                        <option value="portfolio">Portfolio Website</option>
-                        <option value="e-commerce">E-commerce Website</option>
-                        <option value="Revamp">Revamp Your Website</option>
-                    </select>
-                    <div class="form-label-group">
-                        <textarea name="description" id="inputDescription" cols="30" rows="10" placeholder="Tell Me More About Your Wonder...*" maxlength="500" required></textarea>
-                        <label for="inputDescription">Tell Me More About Your Wonder...*</label>
-                    </div>
-                    <div class="checkbox-group">
-                        <input type="checkbox" name="" id="checkBox" required>
-                        <label for="checkBox">I accept the <a href="terms.html">Terms and Condition</a> and <a href="">Privacy Policy</a>.</label>
-                    </div>  
-                    <div style="display: flex;">
-                        <input type="submit" value="Deliver" class="ml-auto">
-                    </div>                  
-                </form>
-            </div>
-            <div class="contact-me-title">
-                <span>
-                    or
-                </span>
-            </div>
-            <ul class="contacts-list">
-                <li role="button"><a href="">Twitter</a></li>
-                <li role="button"><a href="">Whatsapp</a></li>
-                <li role="button"><a href="">Facebook</a></li>
-                <li role="button"><a href="mail-to:adedayoemmanuelt@gmail.com">E-Mail</a></li>
+        <div class=" wks-section-2">
+            <ul class="pricing-list">
+                <li class="pricing-item">
+                    <h5>Basic</h5>
+                    <h6>$150</h6>
+                    <ul class="">
+                        <li>Static Pages</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button class="w-100">PURCHASE</button>
+                </li>
+                <li class="pricing-item">
+                    <h5>Standard</h5>
+                    <h6>$250</h6>
+                    <ul class="">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button class="w-100">PURCHASE</button>
+                </li>
+                <li class="pricing-item">
+                    <h5>Premium</h5>
+                    <h6>$300</h6>
+                    <ul class="">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button class="w-100">PURCHASE</button>
+                </li>
+                <li class="pricing-item">
+                    <h5>Extra</h5>
+                    <ul class="">
+                        <li class="list-split">30 users included <input type="checkbox" name="" id="" checked></li>
+                        <li class="list-split">15 GB of storage <input type="checkbox" name="" id="" checked></li>
+                        <li class="list-split">Phone and email support <input type="checkbox" name="" id="" checked></li>
+                        <li class="list-split">Help center access <input type="checkbox" name="" id="" checked></li>
+                    </ul>
+                    <button class="w-100">ADD</button>
+
+                </li>
+                
             </ul>
         </div>
         
