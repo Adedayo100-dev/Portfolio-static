@@ -71,7 +71,7 @@ function scrollToPrevItem() {
 document.querySelector('.test-counter').innerHTML = "1" + "/"  + lengthTestimonialCard;
 
 
-
+function fireCode(){
 
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
@@ -94,4 +94,5 @@ document.querySelector('.test-counter').innerHTML = "1" + "/"  + lengthTestimoni
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-
+}
+fireCode();
