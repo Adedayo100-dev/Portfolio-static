@@ -558,8 +558,9 @@ div.name-scroll div span{
 }
 .testimonial-card{
     min-width: calc((100vw - (var(--primary-padding) * 2)) / 3);
-    border-radius: 1rem;
-    box-shadow: 0.75px 0.75px 0.75px 0px rgba(8, 8, 8, 0.75);
+    border-radius: 1rem;        
+    /* box-shadow: 0.75px 0.75px 0.75px 0px rgba(8, 8, 8, 0.75); */
+    box-shadow: 0.75px 2px 2px -2px rgb(0 0 0);
     scroll-snap-align: center;
     background-color: #1e1e1e;
     margin-bottom: 10px;
