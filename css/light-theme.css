@@ -25,7 +25,7 @@ body.light-theme{
     border-color: rgba(0 0 0 / 20%) !important;
 }
 .light-theme .navbar-toggler span{
-    background-color: var(--dark-color-2);
+    /* background-color: var(--dark-color-2); */
 }
 .light-theme .heading-type-1{
     -webkit-text-stroke-color: var(--dark-color-2);
@@ -76,9 +76,14 @@ body.light-theme{
 .light-theme .wg-arow-right{
     stroke: var(--dark-color-2);
 }
+.light-theme .spiral-arrow-svg path {
+    fill: var(--dark-color-2);
+    /* rgba(128, 128, 128, 0.5) */
+}
 .light-theme .testimonial-card{
     background-color: #e9e9e9;
     /* border: 1.5px solid var(--dark-color-2); */
+    box-shadow: 0.75px 0.75px 0.75px 0px rgb(128 128 128 / 75%);
 }
 .light-theme .testimonial-card .avatar{
     border: 7.5px solid #FFF;
@@ -90,12 +95,29 @@ body.light-theme{
     stroke: var(--dark-color-2) !important;
 }
 
-/* ABOUT */
-.light-theme .about-content{
-    border-top: 1px solid rgba(128 128 128 / 20%);
+/* BLEND CSS LIGHT-THEME */
+.light-theme::before{
+    background-color: rgb(27, 27, 27);
 }
+.light-theme::after {
+    background-color: rgb(255, 255, 255);
+}
+/* ABOUT */
+/* .light-theme .about-content{
+    border-top-style: solid;
+    border-top-color: rgba(128 128 128 / 20%);
+} */
 .light-theme .about-content p{
     color: rgb(16, 16, 16);
+}
+/* WORKS */
+.light-theme .works button{
+    background-color: var(--dark-color) !important;
+    color: #FFF !important;
+}
+.light-theme .works button:hover{
+    background-color: #e9e9e9 !important;
+    color: var(--dark-color) !important;
 }
 /* PRICING */
 .light-theme .pricing-item button{

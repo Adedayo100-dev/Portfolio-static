@@ -3,6 +3,10 @@
     --dark-color: #121212;
     --dark-color-2: #121212;
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url(css/Lato.woff);
+}
 *{
     box-sizing: border-box;
     outline:0;
@@ -14,12 +18,10 @@ body{
     margin: 0;
     color: #FFF;
     background-color: var(--dark-color); 
-    /* background-image:linear-gradient(to left, black 50%,var(--dark-color) 50%); */
     font-family: sans-serif;
     transition: background-color 2s ease-in-out;
 }
 h1{
-    /* letter-spacing: -2px; */
     /* font-size: 45px; */
     /* font-size: xxx-large; */
     font-size: 85px;
@@ -28,6 +30,7 @@ h1{
     margin-top: 2em; 
 }
 .heading-type-1{
+    text-indent: -5px;
     margin-top: 0;
     margin-bottom: 12px;
     -webkit-text-fill-color: transparent;
@@ -36,10 +39,11 @@ h1{
 }
 .heading-type-2{
     font-size: 85px;
-    font-weight: 700;
-    line-height: 135%;
+    /* font-weight: 700; */
+    /* line-height: 135%; */
     margin-top: 1.5em;
     margin-bottom: 35.275px;
+    letter-spacing: 4px;
 }
 .m-auto{
     margin: auto;
@@ -195,11 +199,11 @@ ul{
 .text-align-center{
     text-align: center;
 }
+.nig-word{
+    display: inline;
+}
 small a{
     color: inherit;
-    /* color: transparent;
-    background: linear-gradient(45deg, red, orange);
-    -webkit-background-clip: text; */
 }
 main{
     width: 100%;
@@ -207,8 +211,7 @@ main{
 }
 .first-section{
     height: calc(100vh - 30px);
-
-    padding: 0 60px 45px;
+    padding: 0 60px 95px;
     position: relative;
     overflow: hidden;
 }
@@ -226,11 +229,6 @@ nav{
     top: 0;
     z-index: 25;
 }
-/* nav>span{
-    font-size: 14px;
-    color: white;
-    line-height: 1;
-} */
 .btn-inline-arrow{
     padding: 0;
     background-color: transparent;
@@ -246,6 +244,7 @@ nav{
     margin-top: 1rem;
     margin-left: auto;
     visibility: hidden;
+    display: none;
 }
 .arrow{
     width: 60px;
@@ -288,15 +287,13 @@ nav{
 }
 .second-section{
     max-height: 100vh;
-    padding: 60px;
-    /* background-color: rgba(249, 249, 249, 0.753); */
+    padding: 0 60px 60px;
     position: relative;
     overflow: hidden;
 }
 .second-section-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* color: var(--dark-color); */
     height: 100%;
     gap: 60px;
 }
@@ -306,7 +303,7 @@ nav{
     margin: 24px 0;
 }
 h3{
-    font-size: 21px;
+    font-size: 24px;
     font-weight: 300;
     margin: 0;
     line-height: 1;
@@ -317,34 +314,22 @@ h3{
 .read-more a, .read-more a:hover, .read-more a:active, .read-more a:visited{
     color: #FFF;
 }
-/* .read-more span{
-    display: none;
-}
-.read-more:hover span{
-    display: inline;
-} */
 .lg-mt-0{
     margin-top: 0;
 }
 .third-section{
-    /* min-height: 100vh; */
     padding: 45px 0;
-    /* background-color: rgb(249, 249, 249); */
     position: relative;
     overflow: hidden;
 }
 .third-section-content{
-    /* display: flex; */
-    /* align-items: center; */
     height: 100%;
 }
 .third-section-content>div:first-child{
     margin: 24px 60px;
 }
 .fourth-section{
-    /* min-height: 100vh; */
     padding: 60px;
-    /* background-color: rgb(249, 249, 249); */
     position: relative;
     overflow: hidden;
 }
@@ -352,7 +337,6 @@ h3{
     height: 100%;
 }
 .fifth-section{
-    /* min-height: 100vh; */
     padding: 60px 0;
     position: relative;
     overflow: hidden;
@@ -403,10 +387,8 @@ div.name-scroll div span{
     color: transparent;
 }
 .works-list{
-    /* display: flex; */
     align-items: center;
     width: 100%;
-    /* height: 100%; */
     overflow: hidden;
 }
 .works-list ul{
@@ -415,24 +397,23 @@ div.name-scroll div span{
     padding-left: 60px;
     padding-bottom: 10px;
 }
-.works-list ul::-webkit-scrollbar, .scroller::-webkit-scrollbar {
-    height: 5.5px;
+.custom-scroll::-webkit-scrollbar {
+    height: 3.5px;
 }
-.works-list ul::-webkit-scrollbar-track, .scroller::-webkit-scrollbar-track {
+.custom-scroll::-webkit-scrollbar-track {
     background: transparent;
 }
-
-.works-list ul::-webkit-scrollbar-thumb, .scroller::-webkit-scrollbar-thumb {
+.custom-scroll::-webkit-scrollbar-thumb {
     background: #888;
 }
-.works-list ul::-webkit-scrollbar-thumb:hover, .scroller::-webkit-scrollbar-thumb:hover {
+.custom-scroll::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 .works-list ul li{
     display: flex;
     flex-direction: column;
     min-width: 275px;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 .works-list ul li:last-child{
     margin-right: var(--primary-padding);
@@ -461,7 +442,6 @@ div.name-scroll div span{
 }
 .works-list ul li div{
     padding: 18.33px 12.22px 12.22px;
-    height: 183.273px;
     border: 0.5px solid;/* #808080 */
     border-top: 0;
     border-bottom-left-radius: 1rem;
@@ -473,24 +453,24 @@ div.name-scroll div span{
     margin: 0;
     min-height: 38.037668px;
     line-height: 1;
+    letter-spacing: 1.75px;
 }
 .works-list ul li div p{
     margin: 0;
     font-size: 11.75px;
     height: 65.937809px;
     text-overflow: ellipsis;
+    letter-spacing: 0.5px;
 }
 .works-list ul li div button{
-    
     color: #FFF;
     background-color: #1e1e1e;
     border: 0;
     border-radius: .25rem;
     padding: 12.99px; 
     cursor: grab;
-    width: 50%;
-    margin-left: 50%;
-    /* margin-top: 6.11px; */
+    min-width: 50%;
+    float: right;
 }
 .works-list ul li div button:hover{
     background-color: #FFF;
@@ -515,7 +495,6 @@ div.name-scroll div span{
 .works{
     display: flex !important;
     flex-direction: row;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     gap: 20px;
     overflow-x: visible !important;
@@ -526,7 +505,6 @@ div.name-scroll div span{
     margin-right: 0 !important;
     width: calc((100% - 60px) / 4);
     min-width: auto !important;
-    /* max-height: calc(( 100vw - 60px) * 1.2) !important; */
 }
 .works li:first-child{
     margin-top: 0 !important;
@@ -536,9 +514,6 @@ div.name-scroll div span{
 }
 .works li img{
     height: auto !important;
-}
-.works li div{
-    /* height: calc((( 100vw - 210px) / 3) * 0.6664) !important; */
 }
 .works button{
     background-color: #FFF !important;
@@ -572,7 +547,6 @@ div.name-scroll div span{
 }
 .testimonials{
     max-width: 100%;
-    /* padding: 15px 0; */
     text-align: center;
 }
 .scroller{
@@ -675,7 +649,6 @@ div.name-scroll div span{
     padding: 10px;
     background-color: transparent;
     color: rgb(219 219 219 / 0.65);
-    /* text-transform: capitalize; */
     border: 0.5px solid rgb(255 255 255 / 100%);
     border-radius: .25rem;
     resize: none;
@@ -773,7 +746,6 @@ details[open] .accordion-flush{
 .location-container>div{
     margin: auto;
     display: inline;
-    /* flex-direction: column; */
 }
 .location-icon{
     color: #FFF;
@@ -804,9 +776,6 @@ footer span{
     }
 }
 @media only screen and (max-width: 991.98px){
-    /* .first-section{
-        padding: 0 60px 45px;
-    } */
     div.sidenav, .second-section{
         padding: 44px 60px 45px;
     }
@@ -816,11 +785,7 @@ footer span{
     .works-list ul{
         padding-left: 60px;
     }
-    /* .works-list ul li:nth-child(1) {
-        margin-left: 40px;
-    } */
     .works{
-        /* grid-template-columns: 1fr 1fr; */
         gap: 20px;
     }
     .works li{
@@ -834,15 +799,12 @@ footer span{
     }
 }
 @media only screen and (max-width: 767.98px){
-    :root{
-        /* --primary-padding: 20px; */
-    }
     nav{
         padding: 25px 40px 0;
     }
     section.first-section{
         height: calc(100vh - 45px);
-        padding: 0 40px 25px;
+        padding: 0 40px 75px;
     }
     div.sidenav{
         padding: 55px 40px 25px;
@@ -887,12 +849,6 @@ footer span{
     .works li img{
         height: auto !important;
     }
-    .works li div{
-        height: calc((( 100vw - 100px) / 2) * 0.6664) !important;
-    }
-    /* .works-list ul li:nth-child(1){
-        margin-left: 40px;
-    } */
     .fourth-section{
         padding: 40px;
     }
@@ -926,9 +882,6 @@ footer span{
     .works li img{
         height: auto !important;
     }
-    .works li div{
-        height: calc(( 100vw - 80px) * 0.6664) !important;
-    }
     .testimonial-card {
         min-width: calc((100vw - (var(--primary-padding) * 2)) / 2);
     }
@@ -942,10 +895,7 @@ footer span{
     }
     section.first-section{
         height: calc(100vh - 60px);
-        padding: 0 var(--primary-padding) 12px;
-    }
-    div.jumbotron{
-        /* margin-bottom: var(--primary-padding); */
+        padding: 0 var(--primary-padding) 86px;
     }
     b br{
         display: inline;
@@ -953,11 +903,8 @@ footer span{
     .socialsgroup{
         justify-content: space-evenly;
     }
-    /* nav{
-        padding: var(--primary-padding) var(--primary-padding) 0;
-    } */
     .second-section, .fourth-section{
-        padding: 80px var(--primary-padding);
+        padding: 0px var(--primary-padding) 0;
     }
     .third-section{
         padding: var(--primary-padding) 0;
@@ -968,9 +915,6 @@ footer span{
     .works-list ul{
         padding-left: var(--primary-padding);
     }
-    /* .works-list ul li:nth-child(1){
-        margin-left: var(--primary-padding);
-    }  */
     .works-list ul li:last-child::after{
         width: 20px;
         right: -20px;
@@ -991,7 +935,6 @@ footer span{
         padding: 20px;
     }
     .works{
-        /* grid-template-columns: 0; */
         gap: 10px;
     }
     .works li img{
@@ -1012,13 +955,7 @@ footer span{
     .testimonial-card{
         min-width: calc(100% - var(--primary-padding));
     }
-    .testimonial-card:last-child{
-        margin-right: 20px;
-    }
-    /* .testimonial-card:not(:last-child){
-        margin-right: 0;
-    } */
-    .test-arrows-2{
+    .testimonial-card:last-child, .test-arrows-2{
         margin-right: var(--primary-padding);
     }
     .test-arrows-2{
@@ -1032,9 +969,12 @@ footer span{
     }
 }
 @media only screen and (max-width: 467.2px){
+    .nig-word{
+        display: none;
+    }
     .works-list ul li{
         min-width: calc(100vw - 60px);
-        min-height: calc(275px * 1.4);
+        /* min-height: calc(275px * 1.4); */
         margin-right: 12.5px;
     }
     .works-list ul li img{
@@ -1059,7 +999,6 @@ footer span{
         gap: 20px;
     }
     .works li{
-        /* margin-top: 20px; */
         margin-right: 0 !important;
         width: 100%;
         max-width: 100% !important;

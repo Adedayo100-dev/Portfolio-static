@@ -10,6 +10,7 @@ figure{
 .about-content{
     margin-top: 0;
     padding-top: 0;
+    /* border: 0; */
 }
 .about-content p:first-child{
     margin-top: 0;
@@ -19,6 +20,7 @@ figure{
     line-height: 2.3;
     font-size: 13px;
     margin-bottom: 0;
+    letter-spacing: 0.5px;
 }
 .about-cta-box{
     padding: 60px 0 20px;
@@ -39,10 +41,12 @@ figure{
 }
 .about-cta-button a{
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 @media only screen and (max-width: 1035.98px){
     .about .wks-section-2{
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding: 0;
     }
     .sub-section-2{
@@ -50,7 +54,7 @@ figure{
     }
     .about-content{
         margin-top: 40px;
-        border-top: 1px solid rgba(219 219 219 / 20%);
+        /* border-top: 1px solid rgba(219 219 219 / 20%); */
         padding-top: 40px;
     }
 }
