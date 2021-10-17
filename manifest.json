@@ -1,21 +1,50 @@
 {
-    "short_name": "Taiwo",
-    "name": "Taiwo Adedayo Emmamuel",
-    "icons": [
-        {
-            "src": "images/.png",
-            "type": "image/png",
-            "sizes": "192x192"
-        },
-        {
-            "src": "images/.png",
-            "type": "image/png",
-            "sizes": "512x512"
-        }
-    ],
-    "start_url": "/?source=pwa",
-    "background_color": "#121212",
-    "display": "standalone",
-    "scope": "/",
-    "theme_color": "#121212"
+  "short_name": "Dee - Why",
+  "name": "Taiwo Adedayo",
+  "icons": [
+    {
+      "src": "/images/me.jpg",
+      "type": "image/jpg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/me.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#121212",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#121212",
+  "shortcuts": [
+    {
+      "name": "About",
+      "short_name": "About",
+      "description": "Know More About Dee -Why",
+      "url": "/about?source=pwa",
+      "icons": [{ "src": "/images/me.jpeg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Works",
+      "short_name": "Works",
+      "description": "View What I've Been Up To",
+      "url": "/works?source=pwa",
+      "icons": [{ "src": "/images/me.jpeg", "sizes": "192x192" }]
+    }
+  ],
+  "description": "Full-stack Front-end Web Developer",
+  "screenshots": [
+    {
+      "src": "/images/me.jpg",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    },
+    {
+      "src": "/images/me.jpg",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    }
+  ]
 }
