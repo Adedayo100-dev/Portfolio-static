@@ -36,23 +36,21 @@ body.light-theme{
 .light-theme .btn-animate:hover a, .light-theme .btn-animate:hover svg {
     color: #FFF !important;
 }
-.light-theme .btn-cv a{
+.light-theme .btn-cv{
     color: var(--dark-color-2);
 }
 .light-theme .btn-works {
+    color: #FFF;
     background-color: var(--dark-color-2) !important;
 }
-.light-theme .btn-works a {
-    color: #FFF;
+.light-theme .btn-works .icon{
+    color: #FFF !important;
 }
 .light-theme .btn-animate:hover a, .light-theme .btn-animate:hover svg {
     color: #FFF;
 }
 .light-theme .btn-works:hover a {
     color: var(--dark-color-2);
-}
-.light-theme .bounce-to-right:before{
-    background-color: #FFF;
 }
 .light-theme .arrow{
     border: 0.5px solid rgb(0 0 0 / 20%);
