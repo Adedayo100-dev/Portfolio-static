@@ -398,8 +398,9 @@ div.name-scroll div span{
 .works-list ul{
     display: flex;
     overflow-x: auto;
-    padding-left: 60px;
+    /* padding-left: 60px; */
     padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
 }
 .custom-scroll::-webkit-scrollbar {
     height: 3.5px;
@@ -418,6 +419,10 @@ div.name-scroll div span{
     flex-direction: column;
     min-width: 275px;
     margin-right: 20px;
+    scroll-snap-align: center;
+}
+.works-list ul li:first-child{
+    margin-left: 60px;
 }
 .works-list ul li:last-child{
     margin-right: var(--primary-padding);
@@ -507,6 +512,7 @@ div.name-scroll div span{
 }
 .works li{
     margin-right: 0 !important;
+    margin-left: 0 !important;
     width: calc((100% - 60px) / 4);
     min-width: auto !important;
 }
@@ -752,10 +758,11 @@ details[open] .accordion-flush{
     margin: auto;
     display: inline;
 }
-.location-icon{
-    color: #FFF;
-    fill: #FFF;
-    stroke: #FFF;
+.dark-theme-loc{
+    display: inline;
+}
+.light-theme-loc{
+    display: none;
 }
 .location-container>div>span{
     margin-top: 5px;
@@ -764,7 +771,7 @@ footer{
     width: 100%;
     padding: 30px 0 60px;
 }
-footer span{
+footer>span{
     color: rgba(128, 128, 128);
     display: block;
     text-align: center;
@@ -787,9 +794,9 @@ footer span{
     .third-section{
         padding: 30px 0;
     }
-    .works-list ul{
+    /* .works-list ul{
         padding-left: 60px;
-    }
+    } */
     .works{
         gap: 20px;
     }
@@ -832,12 +839,15 @@ footer span{
     .third-section-content>div:first-child {
         margin: 24px 40px;
     }
+    .works-list ul li:first-child {
+        margin-left: 40px;
+    }
     .works-list ul li:last-child::after{
         width: 40px;
         right: -40px;
     }
     .works-list ul{
-        padding-left: 40px;
+        padding-left: 0;
     }
     .wks-section-1{
         padding: 0px 40px;
@@ -918,7 +928,10 @@ footer span{
         margin: 24px  var(--primary-padding) 30px;
     }
     .works-list ul{
-        padding-left: var(--primary-padding);
+        padding-left: 0;
+    }
+    .works-list ul li:first-child {
+        margin-left: 20px;
     }
     .works-list ul li:last-child::after{
         width: 20px;
@@ -982,6 +995,9 @@ footer span{
         /* min-height: calc(275px * 1.4); */
         margin-right: 12.5px;
     }
+    /* .works-list ul li:first-child {
+        margin-left: 20px;
+    } */
     .works-list ul li img{
         height: auto;
     }

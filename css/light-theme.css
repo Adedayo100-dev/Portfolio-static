@@ -92,7 +92,12 @@ body.light-theme{
 .light-theme .accordion-flush polyline{
     stroke: var(--dark-color-2) !important;
 }
-
+.light-theme .dark-theme-loc{
+    display: none;
+}
+.light-theme .light-theme-loc{
+    display: inline;
+}
 /* BLEND CSS LIGHT-THEME */
 .light-theme::before{
     background-color: rgb(27, 27, 27);
