@@ -7,11 +7,13 @@
     <title>Taiwo Adedayo®</title>
     <link rel="shortcut icon" href="images/me.jpg" type="image/x-icon">
     <meta name="description" content="Taiwo Adedayo is a Full-stack Freelance Web Developer Based in Lagos. I'm focused on crafting bespoke, fast & responsive websites with user friendly experiences that accurately reflects you and your brand." />
-    <meta name="keywords" content="Dee - Why, Taiwo, Adedayo, Emmanuel, Portfolio">
+    <meta name="keywords" content="Dee - Why, Taiwo, Adedayo, Portfolio">
     <meta name="author" content="Taiwo Adedayo">
+    <link rel="canonical" href="" />
     <meta name="google-site-verification" content="2O12ythSPB7SCNRUYFesoohJhItwIulL-RDXn7bkcNc" />
     <meta name="msvalidate.01" content="E2C60A7196ECE91C10A7CF4EF57F5A6B" />
     <meta name="yandex-verification" content="10cec213404eb242" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover button.css">
@@ -22,23 +24,31 @@
     <link rel="stylesheet" href="css/blend.css">
 
     <!-- Theme -->
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFF">
     <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#121212">
     
     <!-- Twitter -->
+    <meta name="twitter:card" content="">
     <meta name="twitter:site" content="">
     <meta name="twitter:creator" content="">
     <meta name="twitter:title" content="Taiwo Adedayo®">
-    <meta name="twitter:description" content="I'm a Full-stack Freelance Web Developer Based in Lagos">
+    <meta name="twitter:description" content="Taiwo Adedayo is a Full-stack Freelance Web Developer Based in Lagos. I'm focused on crafting bespoke, fast & responsive websites with user friendly experiences that accurately reflects you and your brand." />
     <meta name="twitter:image" content="">
 
     <!-- Facebook -->
     <meta property="og:title" content="Taiwo Adedayo®"> 
-    <meta property="og:description" content="I'm a Full-stack Freelance Web Developer Based in Lagos"> 
-    <meta property="og:type" content="website"> 
-    <meta property="og:site_name" content="Dee - Why">
-    <meta property="og:image" content=""> 
-    <meta property="og:image:type" content="image/png"> 
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Taiwo Adedayo is a Full-stack Freelance Web Developer Based in Lagos. I'm focused on crafting bespoke, fast & responsive websites with user friendly experiences that accurately reflects you and your brand." /> 
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Dee - Why" />
+    <meta property="og:image" content="" /> 
+    <meta property="og:image:type" content="image/png" /> 
+    <!-- <meta property="article:published_time" content="2020-07-28T14:00:30+00:00" />
+    <meta property="article:modified_time" content="2021-10-16T16:54:37+00:00" /> -->
+
+    <link rel="apple-touch-icon" href="" />
+    <meta name="msapplication-TileImage" content="" />
     <noscript></noscript>
 </head>
 <body class="home" id="body">
@@ -154,19 +164,18 @@
             </div>
         </section>
 
-        <section class="second-section">
+        <section class="second-section" itemscope itemtype="https://schema.org/Person">
             <div class="second-section-content">
                 <div>
-                    <figure class="imghvr-zoom-out-right"> <img src="images/me.jpg"> <figcaption> Adedayo Taiwo </figcaption> <a href="#"></a> </figure>
-                    <!-- <img src="images/me.jpg" alt="" width="100%"> -->
-
+                    <img itemprop="image" src="images/me.jpg" alt="" width="100%">
                 </div>
+                <meta itemprop="name" content="Taiwo Adedayo Emmanuel"/>
                 <div>
                     <div class="subtitle-right lg-mt-0">
                         <h3 class="first-h3">What I Do</h3>
                     </div>
-                    <div class="wid-content">
-                        <p>I'm a Nigeria based web developer focused on crafting bespoke, fast & responsive websites with user friendly experiences that accurately reflects you and your brand.</p>
+                    <div class="wid-content" itemprop="about">
+                        <p>I'm a <span itemprop="nationality">Nigeria</span> based web developer focused on crafting bespoke, fast & responsive websites with user friendly experiences that accurately reflects you and your brand.</p>
                         <p>I help businesses do better online with scalable, optimised, maintainable, accessible websites. Esse molestias optio, laboriosam deleniti, saepe quisquam veritatis culpa nisi minus excepturi dolore aliquid? Commodi aliquid at facere quod saepe cumque culpa.</p>
                     </div>
                     <div class="subtitle-right">
@@ -179,7 +188,7 @@
         <section class="third-section">
             <div class="third-section-content">
                 <div>
-                    <h3>My Work</h3>
+                    <h3>Showcase</h3>
                 </div>
                 <div class="works-list">
                     <ul class="custom-scroll">
@@ -520,15 +529,18 @@
                 </div>       
             </details>  
         </div>  
-       
+       
+
         <div class="location-container">
             <div>
-                <img src="images/location-2.svg" height="17px" class="location-icon m-auto">   <span>Lagos, Nigeria</span>
+                <img src="images/location-2.svg" class="dark-theme-loc" height="17px" class="location-icon m-auto">
+                <img src="images/location-3.svg" class="light-theme-loc" height="17px" class="location-icon m-auto">
+                <span>Lagos, Nigeria</span>
             </div>
         </div>
 
         <footer>
-            <span>&copy; 2021. All Rights Reserved.</span>
+            <span>&copy;<span itemprop="copyrightYear"> 2021</span>. All Rights Reserved.</span>
         </footer>
     </main>
     
