@@ -22,20 +22,19 @@ body{
     transition: background-color 2s ease-in-out;
 }
 h1{
-    /* font-size: 45px; */
-    /* font-size: xxx-large; */
-    font-size: 85px;
+    font-size: 150px;
     font-weight: 700;
-    line-height: 135%; 
+    line-height: 100%; 
     margin-top: 2em; 
 }
 .heading-type-1{
     text-indent: -5px;
     margin-top: 0;
     margin-bottom: 12px;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
+    /* -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: white;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px; */
 }
 .heading-type-2{
     font-size: 85px;
@@ -44,6 +43,20 @@ h1{
     margin-top: 1.5em;
     margin-bottom: 35.275px;
     letter-spacing: 4px;
+}
+.outline-text, .name-scroll span{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-font-smoothing: antialiased;
+}
+.outline-title{
+    font-size: 16vw;
+    font-family: Averta, sans-serif;
+    line-height: 18vw;
+    
+    -webkit-text-stroke-color: rgb(206, 202, 227);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
 }
 .m-auto{
     margin: auto;
@@ -90,25 +103,29 @@ a{
 p{
     color: rgba(128, 128, 128);
     font-family: Inter, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0;
 }
 p.desc{
     margin-top: 10px;
     margin-bottom: var(--primary-padding);
-    line-height: 1.9;
+    font-size: 14px;
+    /* line-height: 1.9; */
     max-width: 448.8px;
 }
 .border-color{
     border-color: rgba(219 219 219 / 20%) !important;
 }
+.border-color-white{
+    border-color: #FFF;
+}
 .nav-open{
     transform: translate3d(0, 0, 0) !important;
 }
 div.sidenav{
-    padding: 60px 60px var(--primary-padding);
+    padding: 120px 120px var(--primary-padding);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -188,7 +205,7 @@ ul{
     justify-content: center;
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
     border-radius: 50%;
 }
 .socials-list a{
@@ -211,7 +228,7 @@ main{
 }
 .first-section{
     height: calc(100vh - 30px);
-    padding: 0 60px 95px;
+    padding: 0 120px 95px;
     position: relative;
     overflow: hidden;
 }
@@ -222,7 +239,7 @@ main{
     height: 100%;
 }
 nav{
-    padding: 30px 60px 0;
+    padding: 30px 120px 0;
     display: flex;
     width: 100%;
     position: sticky;
@@ -291,7 +308,7 @@ nav{
 }
 .second-section{
     max-height: 100vh;
-    padding: 0 60px 60px;
+    padding: 0 120px 60px;
     position: relative;
     overflow: hidden;
 }
@@ -307,10 +324,19 @@ nav{
     margin: 24px 0;
 }
 h3{
-    font-size: 24px;
+    /* font-size: 24px; */
     font-weight: 300;
     margin: 0;
-    line-height: 1;
+    /* line-height: 1; */
+    font-size: 8vw;
+    line-height: 12vw;
+    
+    font-family: Averta, sans-serif;
+    
+    color: transparent;
+    -webkit-text-stroke-color: rgb(206, 202, 227);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
 }
 .wid-content p{
     line-height: 1.9;
@@ -325,15 +351,16 @@ h3{
     padding: 45px 0;
     position: relative;
     overflow: hidden;
+    height: 660px;
 }
 .third-section-content{
     height: 100%;
 }
 .third-section-content>div:first-child{
-    margin: 24px 60px;
+    margin: 24px 120px;
 }
 .fourth-section{
-    padding: 60px;
+    padding: 120px;
     position: relative;
     overflow: hidden;
 }
@@ -341,7 +368,7 @@ h3{
     height: 100%;
 }
 .fifth-section{
-    padding: 60px 0;
+    padding: 120px 0;
     position: relative;
     overflow: hidden;
 }
@@ -387,8 +414,7 @@ div.name-scroll div:nth-child(2){
     }
 }
 div.name-scroll div span{
-    -webkit-text-stroke: 1px rgb(128 128 128 / 0.65);
-    color: transparent;
+    -webkit-text-stroke-color: rgb(128 128 128 / 0.65);
 }
 .works-list{
     align-items: center;
@@ -398,7 +424,8 @@ div.name-scroll div span{
 .works-list ul{
     display: flex;
     overflow-x: auto;
-    /* padding-left: 60px; */
+    scroll-behavior: smooth;
+    /* padding-left: 120px; */
     padding-bottom: 10px;
     scroll-snap-type: x mandatory;
 }
@@ -419,21 +446,29 @@ div.name-scroll div span{
     flex-direction: column;
     min-width: 275px;
     margin-right: 20px;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     scroll-snap-align: center;
 }
+.works-list ul li:hover{
+    border: 2px solid rgb(251 24 24);
+    border-radius: 1rem;
+}
 .works-list ul li:first-child{
-    margin-left: 60px;
+    margin-left: 120px;
 }
 .works-list ul li:last-child{
     margin-right: var(--primary-padding);
     position: relative;
+    overflow: visible;
 }
 .works-list ul li:last-child::after {
     content: '';
-    width: 60px;
+    width: 120px;
     position: absolute;
     top: 0;
-    right: -60px;
+    right: -120px;
     height: 100%;
 }
 .works-list ul li img{
@@ -441,13 +476,17 @@ div.name-scroll div span{
     width: 100%;
     height: auto;
     /* border: 0.5px solid rgb(219 219 219 / 20%);#808080 */
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    /* border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; */
     /* border-bottom: 0; */
     transition: filter 0.1s ease-in-out 0.1s;
 }
-.works-list ul li img:hover{
+.works-list ul li img:hover, .works li img:hover{
     filter: grayscale(0);
+}
+.works-list ul li:last-child img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 .works-list ul li div{
     padding: 18.33px 12.22px 12.22px;
@@ -455,6 +494,9 @@ div.name-scroll div span{
     border-top: 0;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+.works-list ul li:hover div{
+    border: 0;
 }
 .works-list ul li div h6{
     font-size: var(--primary-padding);
@@ -471,7 +513,12 @@ div.name-scroll div span{
     text-overflow: ellipsis;
     letter-spacing: 0.5px;
 }
-.works-list ul li div button{
+.works-list ul li div a{
+    appearance: button;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-align: center;
     color: #FFF;
     background-color: #1e1e1e;
     border: 0;
@@ -553,7 +600,7 @@ div.name-scroll div span{
     margin-top: 10px;
 }
 .fifth-section-content>div:first-child{
-    margin: 24px 60px;
+    margin: 24px 120px;
 }
 .testimonials{
     max-width: 100%;
@@ -563,11 +610,12 @@ div.name-scroll div span{
     overflow-x: scroll;
     display: flex;
     padding-top: 37.5px;
-    padding-left: 60px;
+    padding-left: 120px;
+    scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 }
 .testimonial-card{
-    min-width: calc((100vw - (var(--primary-padding) * 2)) / 3);
+    min-width: calc((100vw - (var(--primary-padding) * 6)) / 3);
     border-radius: 1rem;        
     /* box-shadow: 0.75px 0.75px 0.75px 0px rgba(8, 8, 8, 0.75); */
     box-shadow: 0.75px 2px 2px -2px rgb(0 0 0);
@@ -582,7 +630,7 @@ div.name-scroll div span{
     margin-right: 20px;
 }
 .testimonial-card:last-child{
-    margin-right: 60px;
+    margin-right: 120px;
 }
 .testimonial-card .avatar{
     border: 7.5px solid var(--dark-color);
@@ -614,7 +662,7 @@ div.name-scroll div span{
     width: fit-content;
     position: relative;
     margin-left: auto;
-    margin-right: 60px;
+    margin-right: 120px;
 }
 .test-arrows-2>span{
     position: absolute;
@@ -631,7 +679,7 @@ div.name-scroll div span{
     grid-template-columns: 1fr 1fr;
 }
 .accordion{
-    padding: 0 60px;
+    padding: 0 120px;
 }
 .accordion-item{
     padding-top: 15px;
@@ -717,6 +765,12 @@ details[open] .accordion-flush{
     line-height: 2.1em;
     letter-spacing: 0;
 }
+.acc>p>a{
+    color: #FFF;
+}
+.acc>p>a:hover{
+    text-decoration: underline;
+}
 .acc ul li a{
     color: rgba(219 219 219 / 0.65);
 }
@@ -769,7 +823,7 @@ details[open] .accordion-flush{
 }
 footer{
     width: 100%;
-    padding: 30px 0 60px;
+    padding: 30px 0 53px;
 }
 footer>span{
     color: rgba(128, 128, 128);
@@ -777,7 +831,25 @@ footer>span{
     text-align: center;
     font-size: 12px;
 }
+.fluid-gradient-heading {
+    background: linear-gradient(91.36deg, rgb(236, 166, 88) 0%, rgb(243, 145, 166) 13.02%, rgb(225, 136, 195) 25.52%, rgb(165, 141, 227) 37.5%, rgb(86, 171, 236) 49.48%, rgb(115, 126, 183) 63.02%, rgb(200, 99, 140) 72.92%, rgb(221, 93, 87) 84.38%, rgb(223, 108, 81) 97.92%) 0% 0% / 200% 200%;
+    animation: 10s ease 0s infinite normal both running intro-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+@keyframes intro-gradient{
+    0% {
+        background-position: 0% 4%;
+    }
 
+    50% {
+        background-position: 100% 97%;
+    }
+    100% {
+        background-position: 0% 4%;
+    }
+}
 /*WIDTH RESPONSIVENESS */
 @media only screen and (max-width: 1035.98px){
     .works {
@@ -791,8 +863,20 @@ footer>span{
     div.sidenav, .second-section{
         padding: 44px 60px 45px;
     }
+    nav, .first-section, .second-section{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    h1{
+        font-size: 90px;
+        line-height: 115%;
+    }
     .third-section{
         padding: 30px 0;
+    }
+    .third-section-content>div:first-child{
+        margin-left: 60px;
+        margin-right: 60px;
     }
     /* .works-list ul{
         padding-left: 60px;
@@ -800,8 +884,12 @@ footer>span{
     .works{
         gap: 20px;
     }
+    
     .works li{
         width: calc((100% - 40px) / 3);
+    }
+    .works-list ul li:first-child{
+        margin-left: 60px;
     }
     .testimonial-card {
         min-width: calc((100vw - (var(--primary-padding) * 2)) / 2.5);
@@ -829,6 +917,10 @@ footer>span{
     .second-section-content{
         grid-template-columns: auto;
         grid-template-rows: auto;
+    }
+    h3{
+        font-size: 16vw;
+        line-height: 18vw;
     }
     .lg-mt-0{
         margin-top: 24px;
@@ -886,7 +978,7 @@ footer>span{
         padding: 0 40px;
     }
     footer{
-        padding:  20px 40px 40px;
+        padding: 25px 40px 33px;
     }
 }
 @media only screen and (max-width: 660.98px){
@@ -923,6 +1015,7 @@ footer>span{
     }
     .third-section{
         padding: var(--primary-padding) 0;
+        margin: 40px 0;
     }
     .third-section-content>div:first-child{
         margin: 24px  var(--primary-padding) 30px;
@@ -983,7 +1076,7 @@ footer>span{
         padding: 30px var(--primary-padding) 0;
     }
     footer{
-        padding:  20px;
+        padding: 20px;
     }
 }
 @media only screen and (max-width: 467.2px){
@@ -1012,7 +1105,7 @@ footer>span{
     .works-list ul li div p{
         height: 78.9px;
     }
-    .works-list ul li div button{
+    .works-list ul li div a{
         padding: 14px;
         margin-top: 7px;
     }

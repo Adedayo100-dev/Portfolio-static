@@ -1,0 +1,105 @@
+.seo_home_area { background: rgb(247, 253, 252); position: relative; margin-bottom: 135px; }
+
+.seo_home_area .saas_home_img { margin-top: 30px; }
+
+.seo_home_area .saas_home_img img { box-shadow: none; margin-bottom: -140px; }
+
+.seo_banner_content h2 { font-size: 60px; line-height: 80px; color: rgb(38, 59, 94); font-weight: 600; }
+
+.seo_banner_content p { font-size: 18px; line-height: 30px; color: rgb(106, 118, 149); margin-bottom: 53px; }
+
+.seo_banner_content .seo_btn { margin: 0px 8px; }
+
+.home_bubble .bubble { position: absolute; border-radius: 50%; }
+
+.home_bubble .bubble.b_one, .home_bubble .bubble.b_four { width: 10px; height: 10px; }
+
+.home_bubble .bubble.b_two, .home_bubble .bubble.b_five { width: 30px; height: 30px; }
+
+.home_bubble .bubble.b_three, .home_bubble .bubble.b_six { width: 14px; height: 14px; }
+
+.home_bubble .bubble.b_one { background: rgb(0, 201, 156); top: 40%; left: 85px; transform: translateY(-50%); animation: 2s ease 0s infinite alternate none running spin2; }
+
+.home_bubble .bubble.b_two { background: rgb(252, 162, 73); top: 50%; left: 155px; transform: translateY(-50%); animation: 2s ease 0s infinite alternate none running spin1; }
+
+.home_bubble .bubble.b_three { background: rgb(125, 149, 250); top: 85%; left: 255px; animation: 1s ease 0s infinite alternate none running spin1; }
+
+.home_bubble .bubble.b_four { background: rgb(210, 125, 250); top: 40%; right: 85px; transform: translateY(-50%); animation: 2s ease 0s infinite alternate none running spin1; }
+
+.home_bubble .bubble.b_five { background: rgb(255, 147, 152); top: 50%; right: 155px; transform: translateY(-50%); animation: 3s ease 0s infinite alternate none running spin1; }
+
+.home_bubble .bubble.b_six { background: rgb(241, 213, 59); top: 85%; right: 55px; animation: 2s ease 0s infinite alternate none running spin2; }
+
+.home_bubble .triangle { position: absolute; }
+
+.home_bubble .triangle.b_seven { left: 25%; top: 400px; }
+
+.home_bubble .triangle.b_eight { left: -100px; bottom: -45px; }
+
+.home_bubble .triangle.b_nine { right: 28%; bottom: 250px; animation: 2s ease 0s infinite alternate none running spin2; }
+
+@-webkit-keyframes pulse { 
+    0% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(2); }
+}
+
+@keyframes pulse { 
+    0% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(2); }
+}
+
+@-webkit-keyframes spin { 
+    0% { transform: translateX(-10px) scale(0.9); }
+    100% { transform: translateX(30px) scale(1.3) translateY(10px); }
+}
+  
+@keyframes spin { 
+    0% { transform: translateX(-10px) scale(0.9); }
+    100% { transform: translateX(30px) scale(1.3) translateY(10px); }
+}
+
+@-webkit-keyframes spin1 { 
+    0% { transform: scale(0.9); }
+    100% { transform: scale(1.5); }
+}
+
+@keyframes spin1 { 
+    0% { transform: scale(0.9); }
+    100% { transform: scale(1.5); }
+}
+
+@-webkit-keyframes spin2 { 
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(40px); }
+}
+
+@keyframes spin2 { 
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(40px); }
+}
+
+@-webkit-keyframes spin3 { 
+    0% { transform: translateX(0px); }
+    25% { transform: translateY(10px); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(50px); }
+}
+
+@keyframes spin3 { 
+    0% { transform: translateX(0px); }
+    25% { transform: translateY(10px); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(50px); }
+}
+
+@media only screen and (max-width: 992px){
+    .home_bubble .bubble.b_two {
+        top: 50%;
+        left: 125px;
+    }
+    .home_bubble .bubble.b_five {
+        top: 60%;
+        right: 125px;
+    }
+}
+  

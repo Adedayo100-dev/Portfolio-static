@@ -8,6 +8,7 @@
     padding: 12.5px 30px;
     min-height: 44px;
     letter-spacing: 1px;
+    font-size: 14px;
     /* min-width: 180px; */
     width: 266px;
     text-align: center;
@@ -19,10 +20,8 @@
     border: 0.5px solid;
     display: inline;
 }
-.btn-cv span, .btn-works span{
-    display: none;
-}
-.btn-cv:hover span, .btn-works:hover span{
+
+.btn-cv:hover span{
     display: inline;
 }
 .btn-works{
@@ -30,6 +29,9 @@
     margin-left: 0.55rem;
     border: 0;
 }
+/* .btn-works span{
+    display: inline;
+} */
 .btn-works,.btn-works .icon{
     color: rgb(18, 18, 18);
 }
@@ -78,13 +80,89 @@
     }
 }
 
-/* New Test */
-.at-button { z-index: 10000000; position: fixed; right: 24px; bottom: 24px; background: rgb(255, 255, 255); width: 48px; height: 48px; padding: 12px; border-radius: 100%; box-sizing: border-box; color: rgb(102, 102, 102); animation: 0.6s linear 0s infinite normal none running at-ripple; }
+
+
+/* Button Hover Animation for Showcase Thumbnails */
+.skewed-glass{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    line-height: 1;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}
+.skewed-glass::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    will-change: transform;
+    pointer-events: none;
+}
+.btn-hv-animate-1 {
+    --transition-duration: 0.3s;
+    /* position: relative;
+    display: inline-flex; */
+    /* justify-content: center;
+    align-items: center; */
+    background-color: hsl(204, 28%, 7%);
+    box-shadow:  0 0.3px 0.4px rgba(0, 0, 0, 0.025),0 0.9px 1.5px rgba(0, 0, 0, 0.05),0 3.5px 6px rgba(0, 0, 0, 0.1);
+    border-radius:  0.25em;
+    padding: 0.5rem 1.25rem;
+    transition: var(--transition-duration);
+}
+.btn-hv-animate-1::before {
+    background-color: hsla(0,0%,100%,0.25);
+    transform: skewX(-15deg) translate(calc(-100% - 0.5em));
+    pointer-events: none;
+}
+.btn-hv-animate-1:hover::before {
+    transform: skewX(-15deg) translate(calc(100% + 0.5em));
+    transition: transform var(--transition-duration),-webkit-transform var(--transition-duration);
+}
+.btn-hv-animate-1 span {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* Button animation for Contact Me Button */
+.btn-animate-1{
+    -webkit-font-smoothing: antialiased;
+    transition: var(--transition-duration);
+}
+.btn-animate-1::before{
+    background-color: hsla(0,0%,0%,0.25);
+    transform: skewX(-15deg) translate(calc(-100% - 0.5em));
+    animation: animateglass 0.6s linear infinite 1s;
+    transition: transform 0.3s,-webkit-transform 0.3s;
+}
+@keyframes animateglass{
+    0%{
+        transform: skewX(-15deg) translate(calc(-100% - 0.5em));
+    }
+    100%{
+        transform: skewX(-15deg) translate(calc(100% + 0.5em));
+        
+    }
+}
+
+
+/* Floasting-Action-Button for ContactPage*/
+.at-button { z-index: 10; position: fixed; right: 24px; bottom: 24px; background: rgb(255, 255, 255); width: 48px; height: 48px; padding: 12px; border-radius: 100%; box-sizing: border-box; color: rgb(102, 102, 102); animation: 0.6s linear 0s infinite normal none running at-ripple; }
 
 .at-button:hover i { transform: rotate(135deg); }
 
 .at-button i { transform: rotate(-45deg); transition: all 0.3s ease 0s; }
-
+.flab-icon{
+    fill: var(--dark-color);
+}
 @-webkit-keyframes at-ripple { 
   0% { box-shadow: rgba(102, 102, 102, 0.1) 0px 4px 10px, rgba(102, 102, 102, 0.1) 0px 0px 0px 0px, rgba(102, 102, 102, 0.1) 0px 0px 0px 5px, rgba(102, 102, 102, 0.1) 0px 0px 0px 10px; }
   100% { box-shadow: rgba(102, 102, 102, 0.1) 0px 4px 10px, rgba(102, 102, 102, 0.1) 0px 0px 0px 5px, rgba(102, 102, 102, 0.1) 0px 0px 0px 10px, rgba(102, 102, 102, 0) 0px 0px 0px 20px; }
@@ -93,4 +171,73 @@
 @keyframes at-ripple { 
   0% { box-shadow: rgba(102, 102, 102, 0.1) 0px 4px 10px, rgba(102, 102, 102, 0.1) 0px 0px 0px 0px, rgba(102, 102, 102, 0.1) 0px 0px 0px 5px, rgba(102, 102, 102, 0.1) 0px 0px 0px 10px; }
   100% { box-shadow: rgba(102, 102, 102, 0.1) 0px 4px 10px, rgba(102, 102, 102, 0.1) 0px 0px 0px 5px, rgba(102, 102, 102, 0.1) 0px 0px 0px 10px, rgba(102, 102, 102, 0) 0px 0px 0px 20px; }
+}
+
+/* New CTA_Button wiith */
+.btn-works { position: relative; display: inline-block; padding: 1.05556rem 2.22222rem 0.83333rem; font-size: 0.88889rem; line-height: 1.224em; outline: none; box-shadow: none; border: 1px solid rgb(240, 240, 240); overflow: hidden; transition: all 0.3s ease 0s; }
+
+.bg--black .btn-works, .dark-mode .btn-works { background-color: rgb(27, 27, 27); border: 1px solid rgb(240, 240, 240); }
+
+
+.btn-works > span { display: flex; -webkit-box-align: center; align-items: center; justify-content: center; text-align: center; position: relative; z-index: 2; }
+
+/* .btn-works::before { content: ""; position: absolute; width: 120%; height: 102%; top: 0px; left: -130%; background-color: rgb(59, 109, 236); transition: all 0.3s ease-out 0s; transform: skewX(25deg); } */
+
+
+.btn-works__icon { margin-left: 0.55556rem; margin-bottom: 6px; width: 0.55556rem; height: 0.55556rem; display: inline-block; position: relative; overflow: hidden; line-height: 0; }
+
+.btn-works__icon__main { position: absolute; top: 0px; left: 0px; width: 100%; height: auto; }
+
+
+.btn-works__icon__secondary { position: absolute; top: 0px; left: 0px; width: 100%; height: auto; transform: translate3d(-100%, 100%, 0px); }
+
+
+.bg--black .btn-works:hover, .dark-mode .btn-works:hover { border: 1px solid rgb(59, 109, 236); }
+.btn-works:hover .btn-works__icon__main { animation: 0.8s ease-out 0s infinite normal none running d; }
+.btn-works:hover { transition: all 0.3s ease 0s, background-color 0s linear 0.3s; background-color: rgb(59, 109, 236); }
+.btn-works:hover::before { left: -10%; }
+.btn-works:hover .btn-works__icon__secondary { animation: 0.8s ease-out 0s infinite normal none running e; }
+
+.btn-works svg { width: 100%; height: auto; }
+
+.btn-works svg path { stroke: var(--dark-color); }
+
+@-webkit-keyframes d { 
+  0% { transform: translateZ(0px); }
+  80% { transform: translate3d(100%, -100%, 0px); }
+  100% { transform: translate3d(100%, -100%, 0px); }
+}
+
+@keyframes d { 
+  0% { transform: translateZ(0px); }
+  80% { transform: translate3d(100%, -100%, 0px); }
+  100% { transform: translate3d(100%, -100%, 0px); }
+}
+
+@-webkit-keyframes e { 
+  0% { transform: translate3d(-100%, 100%, 0px); }
+  80% { transform: translateZ(0px); }
+  100% { transform: translateZ(0px); }
+}
+
+@keyframes e { 
+  0% { transform: translate3d(-100%, 100%, 0px); }
+  80% { transform: translateZ(0px); }
+  100% { transform: translateZ(0px); }
+}
+
+@-webkit-keyframes f { 
+  0% { transform: translateZ(0px); width: 100%; }
+  40% { transform: translate3d(100%, 0px, 0px); width: 0px; }
+  40.5% { transform: translate3d(-100%, 0px, 0px); width: 100%; }
+  50% { transform: translate3d(-100%, 0px, 0px); width: 100%; }
+  90% { transform: translateZ(0px); width: 100%; }
+}
+
+@keyframes f { 
+  0% { transform: translateZ(0px); width: 100%; }
+  40% { transform: translate3d(100%, 0px, 0px); width: 0px; }
+  40.5% { transform: translate3d(-100%, 0px, 0px); width: 100%; }
+  50% { transform: translate3d(-100%, 0px, 0px); width: 100%; }
+  90% { transform: translateZ(0px); width: 100%; }
 }
