@@ -4,7 +4,13 @@ var sidenav = document.getElementById("sidenav");
 var navbarTogglerButton = document.getElementById("navbartoggler");
 function toggleNav() {
     sidenav.classList.toggle("nav-open");
-   navbarTogglerButton.classList.toggle("navbar-toggler-open");
+    navbarTogglerButton.classList.toggle("navbar-toggler-open");
+}
+
+// DropDown Toggle
+var dropBucket = document.getElementById("filterDropBucket");
+function dropDown(){
+    dropBucket.classList.toggle("show");
 }
 
 // Hover Button Script
@@ -53,19 +59,21 @@ nextBtn.addEventListener('click', scrollToNextItem);
 prevBtn.addEventListener('click', scrollToPrevItem);
 
 function scrollToNextItem() {
+    console.log('NextItem');
     if(scroller.scrollLeft < (scroller.scrollWidth - itemWidth))
         // The scroll position is not at the beginning of last item
-        scroller.scrollBy({left: itemWidth, top: 0, behavior:'smooth'});
+        scroller.scrollBy({left: itemWidth, top: 0});
     else
         // Last item reached. Go back to first item by setting scroll position to 0
-        scroller.scrollTo({left: 0, top: 0, behavior:'smooth'});
+        scroller.scrollTo({left: 0, top: 0});
 }
 function scrollToPrevItem() {
+    console.log('PrevItem');
     if(scroller.scrollLeft != 0)
         // The scroll position is not at the beginning of first item
-        scroller.scrollBy({left: -itemWidth, top: 0, behavior:'smooth'});
+        scroller.scrollBy({left: -itemWidth, top: 0});
     else
         // This is the first item. Go to last item by setting scroll position to scroller width
-        scroller.scrollTo({left: scroller.scrollWidth, top: 0, behavior:'smooth'});
+        scroller.scrollTo({left: scroller.scrollWidth, top: 0});
 }
 document.querySelector('.test-counter').innerHTML = "1" + "/"  + lengthTestimonialCard;
