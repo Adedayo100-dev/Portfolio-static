@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/light-theme.css">
     <link rel="stylesheet" href="css/navbar-toggler.css">
+    <link rel="stylesheet" href="css/hover button.css">
     <link rel="stylesheet" href="css/works.css">
     <link rel="stylesheet" href="css/blend.css">
+    <link rel="stylesheet" href="css/dropdown.css">
     
 </head>
 <body class="" id="body">
@@ -89,14 +91,11 @@
         <section class="wks-section-1">
             <h1 class="heading-type-2">Works</h1>           
         </section>
-        <div class="works-categories">
+        <!-- <div class="works-categories">
             <ul class="custom-scroll">
                 <li class="">
                     <a href="">Featured</a>
                 </li>
-                <!-- <li class="">
-                    <a href=""></a>
-                </li> -->
                 <li class="">
                     <a href="">Latest</a>
                 </li>
@@ -119,7 +118,24 @@
                     <a href="">Website Clones</a>
                 </li>
             </ul>
+        </div> -->
+        <div class="w-100 d-flex px-1">
+            <div class="btn-dropdown-group ml-auto" id="" onclick="dropDown()">
+                <button class="btn btn-secondary border-color btn-sm dropdown-toggle" type="button"id="droped"  data-toggle="dropdown" aria-expanded="false">Filter</button>
+                <ul class="dropdown-menu" id="filterDropBucket" aria-labelledby="droped">
+                    <li><a href="" class="dropdown-item">Featured</a></li>
+                    <li><a href="" class="dropdown-item">Latest</a></li>
+                    <li><a href="" class="dropdown-item">Minimalist Designs</a></li>
+                    <li><a href="" class="dropdown-item">E-commerce Websites</a></li>
+                    <li><a href="" class="dropdown-item">Javascript Projects</a></li>
+                    <li><a href="" class="dropdown-item">Corperate Websites</a></li>
+                    <li><a href="" class="dropdown-item">Website Clones</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a href="" class="dropdown-item">Portfolio Design</a></li>
+                </ul>
+            </div>
         </div>
+        
         <div class="works-list wks-section-2" itemprop="mainContentOfPage">
             <ul class="works">
                 <li>
@@ -127,7 +143,7 @@
                     <div class="border-color">
                         <h6>Minimalist Designs</h6>
                         <p>Lorem ipsum dolor sit amet consecteur goto inter millian der hat tunnel app</p>
-                        <button class="border-color">Check Out</button>
+                        <a href="works.html"class="skewed-glass btn-hv-animate-1">Check Out</a>
                     </div>
                 </li>
                 <li>
@@ -135,7 +151,7 @@
                     <div class="border-color">
                         <h6>Portfolio Design</h6>
                         <p>Lorem ipsum dolor sit amet consecteur goto inter millian der hat tunnel app</p>
-                        <button class="border-color">Check Out</button>
+                        <a href="works.html"class="skewed-glass btn-hv-animate-1">Check Out</a>
                     </div>
                 </li>
                 <li>
@@ -143,7 +159,7 @@
                     <div class="border-color">
                         <h6>E-commerce Websites</h6>
                         <p>Lorem ipsum dolor sit amet consecteur goto inter millian der hat tunnel app</p>
-                        <button class="border-color">Check Out</button>
+                        <a href="works.html"class="skewed-glass btn-hv-animate-1">Check Out</a>
                     </div>
                 </li>
                 <li>
@@ -151,7 +167,7 @@
                     <div class="border-color">
                         <h6>Javascript Projects</h6>
                         <p>My collection of javascript applications</p>
-                        <button class="border-color">Check Out</button>
+                        <a href="works.html"class="skewed-glass btn-hv-animate-1">Check Out</a>
                     </div>
                 </li>
                 <li>
@@ -159,7 +175,7 @@
                     <div class="border-color">
                         <h6>Website Clones</h6>
                         <p>Lorem ipsum dolor sit amet consecteur goto inter millian der hat tunnel app</p>
-                        <button class="border-color">Check Out</button>
+                        <a href="works.html"class="skewed-glass btn-hv-animate-1">Check Out</a>
                     </div>
                 </li>
                 <!-- <li>
@@ -167,7 +183,7 @@
                     <div class="border-color">
                         <h6>WordPress Sites</h6>
                         <p>Lorem ipsum dolor sit amet consecteur goto inter millian der hat tunnel app</p>
-                        <button class="border-color">Check Out</button>
+                        <a href="works.html"class="skewed-glass btn-hv-animate-1">Check Out</a>
                     </div>
                 </li> -->
             </ul>
