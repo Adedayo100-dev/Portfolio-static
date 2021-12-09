@@ -1,6 +1,6 @@
 body{
   position: relative;
-  height: auto;
+  height: 100vh;
 }
 body::before {
   background-color: rgb(27, 27, 27);
