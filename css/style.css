@@ -3,16 +3,16 @@
     --dark-color: #121212;
     --dark-color-2: #121212;
 }
-@font-face {
-    font-family: myFirstFont;
-    src: url(css/Lato.woff);
-}
 *{
     box-sizing: border-box;
     outline:0;
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url(css/.woff);
+}
 html{
- scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -20,6 +20,31 @@ body{
     background-color: var(--dark-color); 
     font-family: sans-serif;
     transition: background-color 2s ease-in-out;
+    position: relative;
+    height: 100vh;
+}
+body::before {
+    background-color: rgb(27, 27, 27);
+    opacity: 0;
+    z-index: -1;
+}
+body::after, body::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+body::after {
+    background-color: rgb(18, 18, 18);
+    opacity: 1;
+    z-index: -2;
+}
+.blend {
+    background: none;
+    mix-blend-mode: difference;
 }
 h1{
     font-size: 150px;
@@ -61,10 +86,12 @@ h1{
     margin-bottom: 35.275px;
     letter-spacing: 4px;
     text-align: center;
+    animation: 10s ease 0s infinite normal both running intro-gradient;
 }
 .heading-type-bold{
     font-size: 120px;
 }
+
 .outline-text, .name-scroll span{
     color: transparent;
     -webkit-text-stroke-width: 1px;
@@ -127,6 +154,9 @@ a{
 }
 .w-100{
     width: 100%;
+}
+.fill-height{
+    height: calc(100vh - 60px);
 }
 p{
     color: rgba(128, 128, 128);
@@ -426,6 +456,12 @@ h3{
     color: white;
     margin-bottom: 5px;
 }
+.config-value:hover{
+    color: transparent;
+    background: linear-gradient(91.36deg, rgb(236, 166, 88) 0%, rgb(243, 145, 166) 13.02%, rgb(225, 136, 195) 25.52%, rgb(165, 141, 227) 37.5%, rgb(86, 171, 236) 49.48%, rgb(115, 126, 183) 63.02%, rgb(200, 99, 140) 72.92%, rgb(221, 93, 87) 84.38%, rgb(223, 108, 81) 97.92%) 0% 0% / 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 .config-sub, .config-value sup{
     font-size: 18px;
 }
@@ -488,7 +524,7 @@ div.name-scroll div span{
     overflow-x: auto;
     scroll-behavior: smooth;
     /* padding-left: 120px; */
-    padding: 4px 0 10px;
+    padding: 4px 0 20px;
     scroll-snap-type: x mandatory;
 }
 .custom-scroll::-webkit-scrollbar {
@@ -521,7 +557,7 @@ div.name-scroll div span{
 }
 .works-list ul li::before {
     content: "";
-    background: linear-gradient(130deg, rgb(255, 122, 24), rgb(175, 0, 45) 41.07%, rgb(49, 145, 151) 76.05%);
+    background: linear-gradient(130deg, rgb(255, 122, 24), rgb(175, 0, 45) 41.07%, rgb(49, 145, 151) 76.05%)  0% 0% / 200% 200%;
     position: absolute;
     top: -2px;
     left: -2px;
@@ -529,6 +565,7 @@ div.name-scroll div span{
     height: calc(100% + 4px);
     z-index: -1;
     border-radius: 1rem;
+    animation: 10s ease 0s infinite normal both running intro-gradient;
     display: none;
 }
 .works-list ul li:hover::before{
@@ -608,13 +645,16 @@ div.name-scroll div span{
     word-spacing: normal;
     text-transform: none;
     text-align: center;
-    color: #FFF;
-    background-color: #1e1e1e;
+    /* color: #FFF; */
+    /* background-color: #1e1e1e; */
     border: 0;
     border-radius: .25rem;
     padding: 12.99px; 
     cursor: grab;
     min-width: 50%;
+    z-index: 2;
+    background: linear-gradient(91.36deg, rgb(236, 166, 88) 0%, rgb(243, 145, 166) 13.02%, rgb(225, 136, 195) 25.52%, rgb(165, 141, 227) 37.5%, rgb(86, 171, 236) 49.48%, rgb(115, 126, 183) 63.02%, rgb(200, 99, 140) 72.92%, rgb(221, 93, 87) 84.38%, rgb(223, 108, 81) 97.92%) 0% 0% / 200% 200%;
+    color: var(--dark-color) !important;
     /* float: right; */
 }
 .works-list ul li div button:hover{
@@ -649,7 +689,7 @@ div.name-scroll div span{
 .works li{
     margin-right: 0 !important;
     margin-left: 0 !important;
-    width: calc((100% - 40px) / 3);
+    width: calc((100% - 20px) / 2);
     min-width: auto !important;
 }
 .works li:first-child{
@@ -710,10 +750,11 @@ div.name-scroll div span{
     box-shadow: 0.75px 2px 2px -2px rgb(0 0 0);
     scroll-snap-align: center;
     background-color: #1e1e1e;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     position: relative;
     overflow: visible;
+    min-height: 180px;
 }
 .testimonial-card:not(:last-child){
     margin-right: 20px;
@@ -737,8 +778,10 @@ div.name-scroll div span{
 .testimonial-content span{
     color: #FFF;
     position: absolute;
+    text-align: center;
+    width: 100%;
     bottom: 20px;
-    left: 43%;
+    left: 0;
 }
 .test-arrows{
     width: fit-content;
@@ -795,6 +838,7 @@ div.name-scroll div span{
 
 .acc p{
     margin: 0;
+    line-height: 2.1;
 }
 .acc input, .acc textarea{
     padding: 10px;
@@ -848,13 +892,13 @@ details[open] .accordion-flush{
 }
 .acc{
     padding: 12.5px 5px;
-    transition: height 5s ease;
 }
 .acc ul li{
     font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 300;
-    line-height: 2.1em;
+    /* line-height: 2.1em; */
+    padding: 6.5px 0;
     letter-spacing: 0;
 }
 .acc>p>a{
@@ -943,10 +987,15 @@ footer>span{
     }
 }
 .cover-section{
-    height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.error-page .cover-section{
+    height: calc(100vh - 60px);
+}
+.jobs-page .cover-section{
+    min-height: calc(100vh - 60px);
 }
 .sitelinks-container a{
     color: rgba(128, 128, 128);
@@ -954,6 +1003,64 @@ footer>span{
 .text-link{
     padding: 1.05556rem 2.22222rem 0.83333rem;
     color: #FFF;
+}
+.jobs-list{
+    padding: 60px 120px;
+    height: auto;
+}
+.jobs-item{
+    display: block;
+    background-color: #1e1e1e;
+    color: rgb(128,128,128);
+    padding: 30px 30px 15px;
+    margin-bottom: 30px;
+    border-radius: 1rem;
+    border-bottom: 0;
+}
+.jobs-item .accordion-flush::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid rgb(219 219 219);
+    border-radius: 50%;
+    top: -5px;
+    left: -5px;
+    position: absolute;
+    z-index: -1;
+    background: var(--dark-color);
+}
+.jobs-item .acc{
+    padding: 11.5px 0 15px;
+}
+.jobs-item .acc ul li:last-child{
+    padding-bottom: 0;
+}
+.jobs-item summary{
+    padding: 0 0 15px;
+}
+.jobs-item summary h5{
+    font-size: 16px;
+    line-height: normal;
+}
+.jobs-item summary .accordion-flush{
+    height: 18px;
+    position: relative;
+    z-index: 1;
+}
+.jobs-item summary .accordion-flush:hover{
+    border: 0;
+}
+.jobs-button{
+    border: 0;
+    border-radius: 0.35rem;
+    background: linear-gradient(91.36deg, rgb(236, 166, 88) 0%, rgb(243, 145, 166) 13.02%, rgb(225, 136, 195) 25.52%, rgb(165, 141, 227) 37.5%, rgb(86, 171, 236) 49.48%, rgb(115, 126, 183) 63.02%, rgb(200, 99, 140) 72.92%, rgb(221, 93, 87) 84.38%, rgb(223, 108, 81) 97.92%) 0% 0% / 200% 200%;
+    color: var(--dark-color) !important;
+    padding: 8px 12px;
+    min-width: 140px;
+    text-align: center;
+    text-decoration: none !important;
+    animation: 10s ease 0s infinite normal both running intro-gradient;
 }
 
 /*WIDTH RESPONSIVENESS */
@@ -1009,12 +1116,15 @@ footer>span{
     }
     .testimonial-card {
         min-width: calc((100vw - (var(--primary-padding) * 2)) / 2.5);
-        min-height: 160px;
+        min-height: 184px;
     }
     .accordion {
         padding: 0 60px;
     }
     .wks-section-2 {
+        padding: 60px;
+    }
+    .jobs-list{
         padding: 60px;
     }
 }
@@ -1043,7 +1153,7 @@ footer>span{
         grid-template-rows: auto;
     }
     h3{
-        font-size: 16vw;
+        font-size: 15vw;
         line-height: 18vw;
     }
     .lg-mt-0{
@@ -1102,15 +1212,22 @@ footer>span{
         margin-right: 40px;
     }
     .accordion{
-        padding: 0 40px;
+        padding: 40px 40px 0;
     }
     footer{
         padding: 25px 40px 33px;
+    }
+    .jobs-list{
+        padding: 40px;
+    }
+    .jobs-item{
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 660.98px){
     .heading-type-2{
         text-align: left;
+        font-size: 72px;
     }
     .works{
         flex-wrap: wrap;
@@ -1120,6 +1237,7 @@ footer>span{
     }
     .testimonial-card {
         min-width: calc((100vw - (var(--primary-padding) * 2)) / 2);
+        min-height: 174px;
     }
 }
 @media only screen and (max-width: 575.98px){
@@ -1215,6 +1333,12 @@ footer>span{
     }
     footer{
         padding: 20px;
+    }
+    .jobs-list{
+        padding: 40px 20px 25px;
+    }
+    .jobs-item{
+        margin-bottom: 15px;
     }
 }
 @media only screen and (max-width: 467.2px){

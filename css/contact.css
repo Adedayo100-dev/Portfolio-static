@@ -1,6 +1,9 @@
 .contact-content{
     display: flex;
     gap: 60px;
+    flex-direction: row;
+}
+.contact .contact-content{
     flex-direction: row-reverse;
 }
 .contact-content div:first-child{
@@ -78,8 +81,12 @@
 }
 @media only screen and (max-width: 991.98px){
     .contact-content{
-        display: block;
-        gap: 0;
+        flex-direction: column;       
+        gap: 20px;
+    }
+    .contact .contact-content{
+        flex-direction: column;
+        gap: 15px;
     }
     .contact-content div:first-child{
         /* padding-bottom: 20px; */
