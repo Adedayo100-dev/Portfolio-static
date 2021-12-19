@@ -21,8 +21,7 @@
     <link rel="stylesheet" href="css/navbar-toggler.css">
     <link rel="stylesheet" href="css/light-theme.css">
     <link rel="stylesheet" href="css/imagehover.min.css">
-    <link rel="stylesheet" href="css/blend.css">
-    <link rel="stylesheet" href="css/bubbles.css">
+    <!-- <link rel="stylesheet" href="css/blend.css"> -->
 
     <!-- Theme -->
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
@@ -75,11 +74,8 @@
                     <li class="nav-list">
                         <a href="projects.html">Projects</a>
                     </li>
-                    <!-- <li class="nav-list">
-                        <a>Blog</a>
-                    </li> -->
-                    <li>
-                        <div class="form-check form-switch">
+                    <li class="w-100 d-flex">
+                        <div class="form-check form-switch m-auto">
                             <input class="form-check-input" type="checkbox" id="themeCheck" checked>
                         </div>
                     </li>
@@ -132,7 +128,7 @@
                     <h1 class="heading-type-1 fluid-gradient-heading fade-in__gradient">Dee - Why</h1>
                     <p class="desc fade-in" lang="en">I'm a front-end web developer. I design vogue websites with aesthetic designs that turn visitors into engaged clients. Let build your brand together...</p>
                     <div class="cta-box">
-                        <a href="projects.html" hreflang="en-US" class="btn-cv border-color-white" download="">
+                        <a href="projects.html" hreflang="en-US" class="btn-cv border-color-white" role="button">
                                 View My Works
                             <span class="btn-inline-arrow" tabindex="0" role="button">
                                 <svg class="icon icon-arrow-right" id="icon-arrow-right" viewBox="0 0 32 32">
@@ -148,7 +144,7 @@
                                 </svg>
                             </span>
                         </a> -->
-                        <a class="btn-works" href="contact.html" target="">
+                        <a href="contact.html" hreflang="en-US" class="btn-works" role="button">
                             <span>
                                 <span class="btn-works__text">Start a Project</span>
                                 <span class="btn-works__icon">
@@ -184,17 +180,6 @@
                     </span>
                 </div>
             </div>
-            <div class="home_bubble">
-                <div class="bubble b_one"></div>
-                <div class="bubble b_two"></div>
-                <div class="bubble b_three"></div>
-                <div class="bubble b_four"></div>
-                <div class="bubble b_five"></div>
-                <div class="bubble b_six"></div>
-                <div class="triangle b_seven" data-parallax="{&quot;x&quot;: 20, &quot;y&quot;: 150}" style="transform:translate3d(2.468px, 18.444px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(2.468px, 18.444px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); "><img src="https://www.cre8ng.com.ng/img/seo/triangle_one.png" alt=""></div>
-                <div class="triangle b_eight" data-parallax="{&quot;x&quot;: 120, &quot;y&quot;: -10}" style="transform:translate3d(14.758px, -1.214px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(14.758px, -1.214px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); "><img src="https://www.cre8ng.com.ng/img/seo/triangle_two.png" alt=""></div>
-                <div class="triangle b_nine"><img src="https://www.cre8ng.com.ng/img/seo/triangle_three.png" alt=""></div>
-            </div>
         </section>
 
         <section class="second-section" itemscope itemtype="https://schema.org/Person">
@@ -220,7 +205,7 @@
                     </div>
                     <div class="wid-content" itemprop="about">
                         <p>Hello, I'm <del>T&aacute;iw&ograve; &Aacute;d&eacute;d&aacute;y&#7885; aka</del> Dee-Why. I'm a <span itemprop="nationality">Nigerian</span> based web developer focused on crafting bespoke, fast & responsive websites with user friendly experiences that accurately reflects you and your brand.</p>
-                        <p>I help businesses do better online with scalable, optimised, maintainable, accessible websites. Esse molestias optio, laboriosam deleniti, saepe quisquam veritatis culpa nisi minus excepturi dolore aliquid? Commodi aliquid at facere quod saepe cumque culpa.</p>
+                        <p>I help businesses do better online with scalable, optimised, maintainable, accessible websites. I typically invest in new business ideas with large knowledge content. Take my talent and experience. Let's make development sound.</p>
                     </div>
                     <div class="subtitle-right">
                         <span class="read-more"><a href="about.html#about-content">Read More <span>&rarr;</span></a></span>
@@ -326,7 +311,7 @@
                     </div>
                 </div>
             </div>
-            <div class="spiral" style="position: absolute; bottom: 19px; left: -71px; overflow: visible; z-index: -1;">
+            <div class="spiral" style="position: absolute; bottom: 0; left: -71px; overflow: visible; z-index: 0;">
                 <div class="spiral-arrow">
                     <a href="about.html">
                         <svg viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="spiral-arrow-svg">
@@ -408,8 +393,8 @@
                     </div>
                     <div class="config-item">
                         <div class="text-align-center">
-                            <span class="config-value">6<span class="config-sub"> breakpoints</span></span>
-                            Responsive
+                            <span class="config-value">6</span>
+                            Breakpoints
                         </div>
                     </div>
                     <div class="config-item">
@@ -582,7 +567,7 @@
                             <a href="#brag">How many years of experience do you have?</a>
                         </li>
                         <li>
-                            <a href="">Do you work internationally?</a>
+                            <a href="" data-answer="yes">Do you work internationally?</a>
                         </li>
                         <li>
                             <a href="contact.html">How do I contact you?</a>
@@ -652,5 +637,29 @@
         const analytics = getAnalytics(app);
     </script>
       
+      <script type="application/ld+json">
+        {
+            "@context":"https:\/\/schema.org",
+            "@type":"Article",
+            "name":"Aerospace engineering",
+            "url":"https:\/\/en.wikipedia.org\/wiki\/Aerospace_engineering",
+            "sameAs":"http:\/\/www.wikidata.org\/entity\/Q3798668",
+            "mainEntity":"http:\/\/www.wikidata.org\/entity\/Q3798668",
+            "author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},
+            "publisher":{
+                "@type":"Organization",
+                "name":"Wikimedia Foundation, 
+                Inc.",
+                "logo":{
+                    "@type":"ImageObject",
+                    "url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"
+                }
+            },
+            "datePublished":"2001-09-26T09:59:17Z",
+            "dateModified":"2019-10-21T12:11:55Z",
+            "image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/c0\/Apollo_13_Mailbox_at_Mission_Control.jpg",
+            "headline":"branch of engineering"
+        }
+    </script>
 </body>
 </html>
