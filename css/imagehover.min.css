@@ -16,7 +16,7 @@
     position: absolute;
 }
 .tile-border .border-vertical-grid-left, .tile-border .border-vertical-grid-right {
-    background: url("http://astateofwar.org.au/u/qanzac/assets/prd/img/home/border-vertical-grid.png") center top repeat-y;
+    background: url("../images/border-vertical-grid.png") center top repeat-y;
     bottom: 40px;
     position: absolute;
     top: 30px;
