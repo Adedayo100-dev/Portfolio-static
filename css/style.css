@@ -426,7 +426,7 @@ h3{
     margin: 24px 120px;
 }
 .fourth-section{
-    /* padding: 120px; */
+    padding-top: 120px;
     position: relative;
     overflow: hidden;
 }
@@ -455,12 +455,6 @@ h3{
     font-size: 40px;
     color: white;
     margin-bottom: 5px;
-}
-.config-value:hover{
-    color: transparent;
-    background: linear-gradient(91.36deg, rgb(236, 166, 88) 0%, rgb(243, 145, 166) 13.02%, rgb(225, 136, 195) 25.52%, rgb(165, 141, 227) 37.5%, rgb(86, 171, 236) 49.48%, rgb(115, 126, 183) 63.02%, rgb(200, 99, 140) 72.92%, rgb(221, 93, 87) 84.38%, rgb(223, 108, 81) 97.92%) 0% 0% / 200% 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
 }
 .config-sub, .config-value sup{
     font-size: 18px;
@@ -689,7 +683,7 @@ div.name-scroll div span{
 .works li{
     margin-right: 0 !important;
     margin-left: 0 !important;
-    width: calc((100% - 20px) / 2);
+    width: calc((100% - 40px) / 3);
     min-width: auto !important;
 }
 .works li:first-child{
@@ -1184,9 +1178,6 @@ footer>span{
     .works{
         gap: 20px;
     }
-    .works li{
-        width: calc((100% - 20px) / 2);
-    }
     .works li img{
         height: auto !important;
     }
@@ -1194,7 +1185,7 @@ footer>span{
         padding: 40px 40px 0;
     }
     .fourth-section{
-        /* padding: 40px; */
+        padding-top: 40px;
     }
     .fifth-section{
         padding: 40px 0;
@@ -1231,6 +1222,9 @@ footer>span{
     }
     .works{
         flex-wrap: wrap;
+    }
+    .works li{
+        width: 100%;
     }
     .works li img{
         height: auto !important;
@@ -1304,6 +1298,9 @@ footer>span{
     }
     .works li div{
         /* height: auto !important; */
+    }
+    .fourth-section{
+        padding-top: 20px;
     }
     .config-box{
         padding: 20px 20px 0;

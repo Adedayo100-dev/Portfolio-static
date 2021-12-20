@@ -150,6 +150,9 @@ body.light-theme{
 .light-theme .jobs-item .acc{
     border-top-color: rgb(219 219 219);
 }
+.light-theme .jobs-item .accordion-flush::before{
+    background-color: white;
+}
 .light-theme .jobs-item .acc ul li a{
     color: #808080;
 }
