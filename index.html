@@ -24,6 +24,9 @@
     <!-- <link rel="stylesheet" href="css/blend.css"> -->
 
     <!-- Theme -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
     <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#121212">
     
@@ -54,7 +57,20 @@
 <body class="home" id="body">
     <nav class=" blend">
         <!-- <span class="logo">Dee - Why</span> -->
-        <div class="navbar-toggler ml-auto" type="button" id="navbartoggler" onclick="toggleNav()">
+        <div class="w-100 d-flex">
+            <ul class="ml-auto" style="display: block;" >
+                <li class="nav-link" onclick="toggleNav()">
+                    <span>Menu</span>
+                </li>
+                <!-- <li class="nav-link">
+                    <a href="">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="">Contact</a>
+                </li> -->
+            </ul>
+        </div>
+        <div class="navbar-toggler ml-auto" type="button" id="navbartoggler" style="display: none;">
             <span class="h-bar-1"></span>
             <span class="h-bar-2"></span>
             <span class="h-bar-3"></span>
@@ -74,11 +90,11 @@
                     <li class="nav-list">
                         <a href="projects.html">Projects</a>
                     </li>
-                    <li class="w-100 d-flex">
+                    <!-- <li class="w-100 d-flex">
                         <div class="form-check form-switch m-auto">
                             <input class="form-check-input" type="checkbox" id="themeCheck" checked>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="contact">
@@ -116,7 +132,7 @@
                     </li>
                 </ul>
                 <div class="text-align-center">
-                    <small style="color: rgb(170, 170, 170, .75);">Made with love in Lagos, <span class="nig-word"> Nigeria,</span> by <a href="https://www.instagram.com/">_taiwo_adedayo_</a></small>
+                    <small style="color: rgb(170, 170, 170, .75);">Made with love in Ontario, <span class="nig-word"> Canada,</span> by <a href="https://www.instagram.com/">_taiwo_adedayo_</a></small>
                 </div>
             </div>
         </div>  
@@ -125,7 +141,7 @@
         <section class="first-section">
             <div class="first-section-content">
                 <div class="jumbotron">
-                    <h1 class="heading-type-1 fluid-gradient-heading fade-in__gradient">Dee - Why</h1>
+                    <h1 class="heading-type-1 fluid-gradient-heading fade-in__gradient"><span>DEE - WHY</span><span>Dee - Why</span></h1>
                     <p class="desc fade-in" lang="en">I'm a front-end web developer. I design vogue websites with aesthetic designs that turn visitors into engaged clients. Let build your brand together...</p>
                     <div class="cta-box">
                         <a href="projects.html" hreflang="en-US" class="btn-cv border-color-white" role="button">
@@ -166,6 +182,7 @@
                             
                         </style>
                     </div>
+                    <span claas="theme-mode" onclick="changeTheme()">✺ Light Mode</span>
                 </div>
                 <div class="arrow-container">
                     <span class="arrow prev-arrow btn-animate" tabindex="0" role="button" aria-label="Previous slide">
@@ -204,7 +221,7 @@
                         <h3 class="first-h3 outline-text">What I Do</h3>
                     </div>
                     <div class="wid-content" itemprop="about">
-                        <p>Hello, I'm <del>T&aacute;iw&ograve; &Aacute;d&eacute;d&aacute;y&#7885; aka</del> Dee-Why. I'm a <span itemprop="nationality">Canadian</span>🇨🇦 based web developer focused on crafting bespoke, fast & responsive websites with user friendly experiences that accurately reflects you and your brand.</p>
+                        <p>Hello, I'm <del>T&aacute;iw&ograve; &Aacute;d&eacute;d&aacute;y&#7885; aka</del> Dee-Why. I'm a web developer based in <span itemprop="nationality">Canada</span>. I'm focused on crafting bespoke, fast & responsive websites with user friendly experiences that accurately reflects you and your brand.</p>
                         <p>I help businesses do better online with scalable, optimised, maintainable, accessible websites. I typically invest in new business ideas with large knowledge content. Take my talent and experience. Let's make development sound.</p>
                     </div>
                     <div class="subtitle-right">
@@ -325,11 +342,11 @@
                     </defs>
                     <text dy="-10" textLength="1220">
                         <textPath xlink:href="#textcircle" class="spiral-textpath">
-                    Dee - Why's Profile
+                    Dee - Why's Collections
                     
                     •
                     
-                    Dee - Why's Profile
+                    Dee - Why's Collections
                     
                     •
                         </textPath>
@@ -359,10 +376,10 @@
                     animation: rotate-spiral 30s linear infinite;
                 }
                 .spiral-textpath{
-                    font-size: 50px;
+                    font-size: 37.5px;
                     /* font-family: "Grotesk"; */
                     text-transform: uppercase;
-                    letter-spacing: 5px;
+                    letter-spacing: -9px;
                     fill: rgba(128, 128, 128, 0.5);
                 }
                 @keyframes rotate-spiral {
@@ -376,7 +393,7 @@
         <section class="fourth-section">
             <div class="fourth-section-content" id="brag">
                 <div class="">
-                    <h3 class="outline-text">My Brag</h3>
+                    <h3 class="outline-text">Features</h3>
                 </div>
                 <div class="config-box">
                     <div class="config-item" id="yearsOfExperience">
@@ -639,26 +656,29 @@
       
       <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "address": {
-                           "@type": "PostalAddress",
-                           "addressLocality": "Seattle",
-                           "addressRegion": "WA",
-                           "postalCode": "98052",
-                           "streetAddress": "20341 Whitworth Institute 405 N. Whitworth"
-                       },
-            "colleague": [
-                             "http://www.xyz.edu/students/alicejones.html",
-                             "http://www.xyz.edu/students/bobsmith.html"
-                         ],
-            "email": "mailto:jane-doe@xyz.edu",
-            "image": "janedoe.jpg",
-            "jobTitle": "Professor",
-            "name": "Jane Doe",
-            "telephone": "(425) 123-4567",
-            "url": "http://www.janedoe.com"
-}
+            "@context":"https:\/\/schema.org",
+            "@type":"Article",
+            "name":"Aerospace engineering",
+            "url":"https:\/\/en.wikipedia.org\/wiki\/Aerospace_engineering",
+            "sameAs":"http:\/\/www.wikidata.org\/entity\/Q3798668",
+            "mainEntity":"http:\/\/www.wikidata.org\/entity\/Q3798668",
+            "author":{
+                "@type":"Organization",
+                "name":"Contributors to Wikimedia projects"
+            },
+            "publisher":{
+                "@type":"Organization",
+                "name":"Wikimedia Foundation, Inc.",
+                "logo":{
+                    "@type":"ImageObject",
+                    "url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"
+                }
+            },
+            "datePublished":"2001-09-26T09:59:17Z",
+            "dateModified":"2019-10-21T12:11:55Z",
+            "image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/c0\/Apollo_13_Mailbox_at_Mission_Control.jpg",
+            "headline":"branch of engineering"
+        }
     </script>
 </body>
 </html>
