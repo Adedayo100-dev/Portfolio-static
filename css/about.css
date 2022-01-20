@@ -1,11 +1,15 @@
 .about .wks-section-2{
     display: flex;
+    gap: 30px;
 }
 figure{
     height: 100%;
 }
 .sub-section-2{
-    padding: 0 60px;
+    padding: 0;
+}
+.about-image{
+    width: 100%;
 }
 .about-content{
     margin-top: 0;
@@ -23,7 +27,7 @@ figure{
     letter-spacing: 0.5px;
 }
 .about-cta-box{
-    padding: 60px 0 20px;
+    padding: 20px 0;
     display: flex;
 }
 .about-cta-button{
@@ -48,9 +52,15 @@ figure{
         display: flex;
         flex-direction: column;
         padding: 0;
+        gap: 0;
     }
     .sub-section-2{
-        padding: 20px 60px;
+        padding: 20px 120px;
+    }
+    .about-image{
+        padding-left: 120px;
+        padding-right: 120px;
+        width: 100%;
     }
     .about-content{
         margin-top: 40px;
@@ -64,10 +74,8 @@ figure{
         padding: 20px;
     }
     .about-content{
-        margin-top: 40px;
+        margin-top: 0;
         padding-top: 40px;
     }
-    .about-cta-box{
-        padding: 40px 0 0;
-    }
+    
 }
