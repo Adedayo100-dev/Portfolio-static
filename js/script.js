@@ -14,17 +14,17 @@ function dropDown(){
 }
 
 // Hover Button Script
-var btnAnimate = document.querySelectorAll('.btn-animate');
+// var btnAnimate = document.querySelectorAll('.btn-animate');
 //Create for loop for btn-cv too
-for (let i = 0; i < btnAnimate.length; i++) {
-    btnAnimate[i].onmousemove = function(e){
-    const x = e.pageX - btnAnimate[i].offsetLeft;
-    const y = e.pageY - btnAnimate[i].offsetTop;
+// for (let i = 0; i < btnAnimate.length; i++) {
+//     btnAnimate[i].onmousemove = function(e){
+//     const x = e.pageX - btnAnimate[i].offsetLeft;
+//     const y = e.pageY - btnAnimate[i].offsetTop;
 
-    btnAnimate[i].style.setProperty('--x', x + 'px');
-    btnAnimate[i].style.setProperty('--y', y + 'px');
-    }
-}
+//     btnAnimate[i].style.setProperty('--x', x + 'px');
+//     btnAnimate[i].style.setProperty('--y', y + 'px');
+//     }
+// }
 
 // Accordion Toggle
 // var accordionHead = document.querySelectorAll('.accordion-head');
@@ -44,6 +44,10 @@ for (let i = 0; i < btnAnimate.length; i++) {
 document.getElementById("themeCheck").addEventListener("change", function() {
   body.classList.toggle("light-theme");
 });
+
+function changeTheme() {
+    body.classList.toggle("light-theme");
+}
 //alert("isChecked");
 
 const testimonials = document.querySelector('.testimonials');
